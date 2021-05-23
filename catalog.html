@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- что делать с линиями горизонтальными  -->
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="#" alt="logo"></a>     <!-- top left logo под вопросом как верстать-->
+            <ul>
+            <li><a href="index.html">Студия</a> </li>
+            <li><a href="blank.html">Клиенты</a> </li>
+            <li><a>Магазин</a> </li>
+            <li><a href="blank.html">Контакты</a> </li>
+            </ul>
+            <a href="#"><img src="#" alt="Basket"></a>
+            <a href="blank.html">Корзина</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Магазин готовых шаблонов</h1>
+        
+        <section>
+            <h2>Конфигуратор опций</h2> <!-- Hide -->
+            
+
+            <form method="GET" action="https://echo.htmlacademy.ru">
+                <h2>Стоимость:</h2> 
+                <meter min="0" max="15000" value="10000"></meter>
+                <input type="number" name="from" value="0" id="startValue" min=0 max=15000>
+                    <label for="startValue">от</label>
+                <input type="number" name="till" value="15000" id="endValue" min=0 max=15000>
+                    <label for="endValue">до</label>
+
+                <fieldset>
+                    <legend>сетка:</legend>
+                    <ul>
+                        <li><input type="radio" name="grid" id="adapt" value="adaptiv" checked><label for="adapt">Адаптивная</label></li>
+                        <li><input type="radio" name="grid" id="fix" value="fix"><label for="fix">Фиксированная</label></li>
+                        <li><input type="radio" name="grid" id="rubber" value="rubber"><label for="rubber">Резиновая</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>особенности:</legend>
+                    <ul>
+                        <li><input type="checkbox" name="slider" id="slder" checked><label for="slder">Слайдер</label></li>
+                        <li><input type="checkbox" name="advantages" id="advntgs"><label for="advntgs">Блок преимуществ</label></li>
+                        <li><input type="checkbox" name="news" id="nws" checked><label for="nws">Новости</label></li>
+                        <li><input type="checkbox" name="gallery" id="glry"><label for="glry">Галерея</label></li>
+                        <li><input type="checkbox" name="basket" id="bskt"><label for="bskt">Корзина</label></li>
+                    </ul>
+                </fieldset>
+                <button type="submit">показать</button>
+            </form>         
+        </section>
+        <section>
+            <h2>Готовые шаблоны</h2>
+            <h3>сортировать:</h3>
+            <ul>
+                <li><button type="button">по цене</button></li>
+                <li><button type="button">по типу</button></li>
+                <li><button type="button">по названию</button></li>
+                <li><button type="button"><img src="#" alt="down triangle" width="11" height="10"></button></li>
+                <li><button type="button"><img src="#" alt="up triangle" width="11" height="10"></button></li>
+            </ul>
+            <ul>
+                <li>
+                    <button type="button"></button> <!-- slides switcher -->
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <img src="#" alt="decor rectangle" width="360" height="40">
+                    <img src="#" alt="Sedona screenshot" width="359" height="578">
+                    
+                    <h3>sedona</h3>
+                    <p>Информационный сайт <br>для туристов</P>
+                    <button type="button">9 900 ₽</button>
+                </li>
+                <li>
+                    <button type="button"></button> <!-- slides switcher -->
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <img src="#" alt="decor rectangle" width="360" height="40">
+                    <img src="#" alt="Pink screenshot" width="358" height="578">
+                </li>
+                <li>
+                    <button type="button"></button> <!-- slides switcher -->
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <img src="#" alt="decor rectangle" width="360" height="40">
+                    <img src="#" alt="Borodinski screenshot" width="358" height="578">
+                </li>
+                <li>
+                    <button type="button"></button> <!-- slides switcher -->
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <img src="#" alt="decor rectangle" width="360" height="40">
+                    <img src="#" alt="HandMade screenshot" width="359" height="578">
+                </li>
+                <li>
+                    <button type="button"></button> <!-- slides switcher -->
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <img src="#" alt="decor rectangle" width="360" height="40">
+                    <img src="#" alt="School screenshot" width="359" height="578">
+                </li>
+                <li>
+                    <button type="button"></button> <!-- slides switcher -->
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <img src="#" alt="decor rectangle" width="360" height="40">
+                    <img src="#" alt="Kraft screenshot" width="359" height="578">
+                </li>
+            </ul>
+            <ul>
+                <li><a>1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">Следующая</a></li>
+            </ul>
+
+        </section>
+
+        <section>
+            <img src="#" alt="big map" height="416" width="1440">
+            <img src="#" alt="comma logo" height="190" width="231">
+            <img src="#" alt="rectangle for contacts" height="308" width="319">
+    
+            <h5>NЁRDS DESIGN STUDIO</h5>
+            <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург<br><br>
+              <a href="tel:+78005558628">+7 800 555-86-28</a>
+            </p>
+            <a href="blank.html">Напишите нам</a>
+          </section>
+        
+
+
+    </main>
+
+    <footer>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <ul>
+          <li><a href="blank.html"><img src="#" alt="ВКонтакте logo"></a></li>
+          <li><a href="blank.html"><img src="#" alt="FaceBook logo"></a></li>
+          <li><a href="blank.html"><img src="#" alt="Instagram logo"></a></li>
+        </ul>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
