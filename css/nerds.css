@@ -1,1 +1,259 @@
-/* empty css file */
+/* nerds styles 
+.knowBut - маловат размер
+*/
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: max 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --mainBackGround: #FFFFFF;
+    --footerBackGround: #EEEEEE;
+    --gold: #EFC849;
+    --green: #00CA74;
+    --calmRed: #FB565A;
+    --hoverRed: #E74246;
+    --activeRed: #D7373B;
+    --calmGreen: #00CA74;
+    --hoverGreen:#00BC6C;
+    --activeGreen:#00AA62;
+    --calmGold:#EFC849;
+    --hoverGold:#EAB534;
+    --activeGold:#E5A722;
+    --black: #000000;
+    --textGrey: #283136;
+    --textGreyLess: #666666;
+
+}
+body {
+    min-width: 960px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textGrey);
+    background-color: var(--mainBackGround);
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .navi {background-color: transparent;}
+
+  .site-navi li {
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    /* text-align: right; */
+
+  }
+  .site-navi a {color: var(--black);}
+  .site-navi a:hover {color: var(--calmRed);}
+  .site-navi a:focus {color: var(--black);}
+
+  .slogan {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .but {
+      font: inherit;
+      color: var(--mainBackGround);
+      height: 50px;
+      width: 160px;
+      line-height: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      vertical-align: middle;
+      border: none;
+  }
+
+  .knowBut {
+      background-color: var(--calmRed);
+      height: 50px;
+      width: 240px;
+  }
+
+  .gall-head {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .redBut {background-color: var(--calmRed);}
+  .greenBut {background-color: var(--calmGreen);}
+  .goldBut {background-color: var(--calmGold);}
+
+  .redBut:hover {background-color: var(--hoverRed);}
+  .redBut:active {background-color: var(--activeRed);}
+  .greenBut:hover {background-color: var(--hoverGreen);}
+  .greenBut:active {background-color: var(--activeGreen);}
+  .goldBut:hover {background-color: var(--hoverGold);}
+  .goldBut:active {background-color: var(--activeGold);}
+
+  .princips-header {
+      font-size: 45px;
+      line-height: 45px;
+      color: var(--black);
+  }
+
+  .whatWeCanDo-header {
+      text-transform: uppercase;
+      font-weight: 700;
+  }
+
+  
+  .percents {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+  }
+
+  /* .perform-metrics {line-height: 18;} /*я не понимаю, почему когда раскомментирую все элементы разъезжаются */
+
+.fullName-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.address {
+    line-height: 18px;
+    color: var(--textGreyLess);
+}
+
+.address a {color: var(--textGreyLess);}
+
+.writeMeButt {
+    height: 50px;
+    width: 219px;
+    border-radius: 3px;
+    background-color: var(--calmRed);
+    color: var(--mainBackGround);
+}
+
+.fotHeader {
+    size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.disconts-10 {line-height: 22px;}
+
+/* Catalog */
+.shopMainHeader {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+.form-heads {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.checkBoxFeatureSet input[type="checkbox"], 
+.checkBoxGridSet input[type="radio"] {
+    line-height: 20;
+}
+
+.labels {line-height: 22px;}
+
+.price {
+    width: 80px;
+    height: 38px;
+    background-color: var(--footerBackGround);
+    text-align: center;
+    line-height: 22px;
+}
+
+.priceMeter {
+    width: 260px;
+    height: 80px;
+    background-color: var(--footerBackGround);
+}
+
+.showBut {
+    line-height: 18px;
+    background-color: var(--footerBackGround);
+    color: var(--black);
+    width: 260;
+    height: 50;
+    text-align: center;
+}
+
+.sortIt-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.whatToSort {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    opacity: 30%;
+    border: none;
+    background: none;
+}
+
+.wtsBold {opacity: 100%;}
+
+.projName {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.projDescr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+.projBut {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--calmRed);
+    color: var(--mainBackGround);
+    text-align: center;
+    font-weight: 500;
+}
+
+.shablNavi {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--footerBackGround);
+    color: var(--mainBackGround);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nextNavi {width: 260px;}

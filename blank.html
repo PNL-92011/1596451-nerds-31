@@ -7,28 +7,34 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple_png_152.png">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nerds.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/Nerds_logo_top_left.svg" alt="logo"></a>     <!-- top left logo -->
-        <ul>
-          <li><a href="index.html">Студия</a> </li>
+      <nav class="navi">
+        <a href="index.html"><img src="img/Nerds_logo_top_left.svg" alt="logo"></a>     
+        <ul class="site-navi">
+          <li><a href="blank.html">Студия</a> </li>
           <li><a href="blank.html">Клиенты</a> </li>
           <li><a href="catalog.html">Магазин</a> </li>
           <li><a href="blank.html">Контакты</a> </li>
+          <li><a href="#"><img src="img/Basket.png" alt="bskt"> </a></li>
+          <li><a href="blank.html">Корзина</a></li>
         </ul>
-        <a href="#"><img src="img/Basket.png" alt="bskt"></a>
-        <a href="blank.html">Корзина</a>
+      </nav>
   
         <img src="img/Slide_show_Flying_phones.jpg" height="431" width="760" alt="Flying phones">
   
-        <h2>Долго, дорого, скрупулезно</h2>
+        <h2 class="slogan">Долго, дорого, скрупулезно</h2>
         <p>
           Математически выверенный дизайн<br> 
           для вашего сайта или мобильного приложения.
         </p>
   
-        <a href="blank.html">Узнать больше</a>
+        <button type="button" class="knowBut but">Узнать больше</button>
     </header>
     <main>
 
@@ -37,13 +43,13 @@
     
 
     <footer>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a href="blank.html"><img src="img/vk_icon.png" alt="ВКонтакте logo"></a></li>
-          <li><a href="blank.html"><img src="img/fb_icon.png" alt="FaceBook logo"></a></li>
-          <li><a href="blank.html"><img src="img/instagram_icon.png" alt="Instagram logo"></a></li>
-        </ul>
+      <h2 class="fotHeader">Давайте дружить, это выгодно!</h2>
+      <p class="disconts-10">Скидка 10% для друзей из социальных сетей.</p>
+      <ul>
+        <li><a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png" alt="VK icon" ></a></li>
+        <li><a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a></li>
+        <li><a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a></li>
+      </ul>
     </footer>
 </body>
 
