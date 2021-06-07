@@ -1,6 +1,11 @@
 /* nerds styles 
 .knowBut - маловат размер
 */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 a {
     text-decoration: none;
