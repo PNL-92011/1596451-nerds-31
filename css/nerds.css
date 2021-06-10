@@ -74,6 +74,12 @@ img {
   .site-navi a:hover {color: var(--calmRed);}
   .site-navi a:focus {color: var(--black); opacity: 0.3;}
 
+  .basketOnHeader {color: var(--black); font-weight: 500;}
+  .basketOnHeader:hover {color: var(--calmRed);}
+  .basketOnHeader:focus {color: var(--black); opacity: 0.3;}
+
+  .baskIMG {margin-left: 25px;}
+
   .slogan {
     font-weight: 500;
     font-size: 55px;
@@ -98,7 +104,7 @@ img {
       width: 240px;
   }
   .knowBut:hover {background-color: var(--hoverRed);}
-  .knowBut:active {background-color: var(--activeRed);}
+  .knowBut:active {background-color: var(--activeRed); opacity: 0.3}
 
   .gall-head {
     text-transform: uppercase;
@@ -112,11 +118,11 @@ img {
   .goldBut {background-color: var(--calmGold);}
 
   .redBut:hover {background-color: var(--hoverRed);}
-  .redBut:active {background-color: var(--activeRed);}
+  .redBut:active {background-color: var(--activeRed); opacity: 0.3;}
   .greenBut:hover {background-color: var(--hoverGreen);}
-  .greenBut:active {background-color: var(--activeGreen);}
+  .greenBut:active {background-color: var(--activeGreen); opacity: 0.3}
   .goldBut:hover {background-color: var(--hoverGold);}
-  .goldBut:active {background-color: var(--activeGold);}
+  .goldBut:active {background-color: var(--activeGold); opacity: 0.3}
 
   .princips-header {
       font-size: 45px;
@@ -138,27 +144,7 @@ img {
     /* margin-bottom: 11px; */
   }
 
-.fullName-header {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--black);
-}
 
-.address {
-    line-height: 18px;
-    color: var(--textGreyLess);
-}
-
-.address a {color: var(--textGreyLess);}
-
-.writeMeButt {
-    height: 50px;
-    width: 219px;
-    border-radius: 3px;
-    background-color: var(--calmRed);
-    color: var(--mainBackGround);
-}
 
 .fotHeader {
     size: 36px;
@@ -291,6 +277,13 @@ img {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.topleftLogo {
+    background-image: url(../img/Nerds_logo_top_left.svg);
+    background-repeat: no-repeat;
+}
+.topleftLogo:hover {background-image: url(../img/nerds-logo-top-left-HOVER.png);}
+.topleftLogo:active {background-image: url(../img/nerds-logo-top-left-ACTIVE.png);}
+
 .site-navi {
     margin-top: 26px;
     margin-left: auto;
@@ -321,6 +314,7 @@ img {
     height: 431px;
     margin-right: 143px;
     margin-left: auto;
+    background-image: url(../img/PNG_Slide_show_Flying_phones.png);
 }
 
 .slideImg {
@@ -330,15 +324,16 @@ img {
     background-color: transparent;
 }
 
-/* не работает */
-.slideImg, .button1, .button2, .button3 {
-    position: relative;
-}
-
-/* не работает */
 .button1 {
-    top: -50px;
-    left: 30px;
+    margin-top: 322px;
+    margin-right: auto;
+    margin-left: 139px;
+    border: none;
+    background-color: transparent;
+}
+.button2, .button3 {
+    border: none; 
+    background-color: transparent;
 }
 
 /* gallery */
@@ -422,30 +417,62 @@ img {
     height: 416px; 
     width: 1440px;
     margin-bottom: 68px;
-}
-
-.footerBlock {
-    height: 81px; 
-    width: 1060px;
-    margin-left: 140px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-.promo {
-    margin: auto;
+    background-image: url(../img/Big_map_with_commaLogo.jpg);
+    background-repeat: no-repeat;
 }
 
 .contactsBlock {
     width: 319px;
     height: 308px;
-    padding-left: 50px;
-    padding-top: 49px;
+    margin-left: 140px;
+    margin-top: 54px;
     background-color: var(--mainBackGround);
     display: inline-block;
     outline: 1px solid yellowgreen;
 }
 
-.writeMeButt {margin-top: 37px;
-    
+.fullName-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--black);
+    margin-top: 49px;
+    margin-left: 50px;
+    margin-right: auto;
 }
+
+.address {
+    line-height: 18px;
+    color: var(--textGreyLess);
+    margin: 23px 39px auto 50px;
+}
+
+.address a {color: var(--textGreyLess);}
+
+.writeMeButt {
+    height: 50px;
+    width: 219px;
+    border-radius: 3px;
+    background-color: var(--calmRed);
+    color: var(--mainBackGround);
+    margin: 37px 50px 47px;
+}
+
+.writeMeButt:hover {background-color: var(--hoverRed);}
+.writeMeButt:active {background-color: var(--activeRed); opacity: 0.3;}
+
+.footerBlock {
+    height: 81px; 
+    width: 1060px;
+    margin-left: 140px;
+    margin-bottom: 68px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* .VK-icon:hover {background-image: url(../img/vk_icon_hover.png);} */
+
+.promo {
+    margin: auto;
+}
+

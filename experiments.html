@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>z-index</title>
+  <style>
+      /* .block {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+      } */
+   #layer1, #layer2, #layer3, #layer4 {
+    position: relative; /* Относительное позиционирование */
+   } 
+   #layer1, #layer3 {
+    font-size: 50px; /* Размер шрифта в пикселах */
+    color: #000080; /* Синий цвет текста */
+   }
+   #layer2, #layer4 {
+    top: -55px; /* Сдвигаем текст вверх */
+    left: 5px; /* Сдвигаем текст вправо */
+    color: #ffa500; /* Оранжевый цвет текста */
+    font-size:70px;  /* Размер шрифта в пикселах */
+   }
+  
+   .second-part {
+    display: block;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 400px;
+    outline: 2px solid yellowgreen;
+    background-image: url(img/comma_logo.jpg), url(img/PNG_Slide_show_Flying_phones.png);
+    /* background-image: url(img/comma_logo.jpg); */
+   }
+   .butt {margin: 100px;}
+  </style>
+ </head>
+ <body>
+  <div class="block">
+    <div class="first-part">
+        <p class="layer1">Слой 1</p>
+        <p class="layer2">Слой 2</p> 
+    </div>
+    <div class="second-part">
+        <!-- <img class="layer3" src="img/PNG_Slide_show_Flying_phones.png"> -->
+        <!-- <img class="layer4" src="img/comma_logo.jpg">  -->
+        <button type="button" class="butt">BUTTON</button>
+    </div>
+  </div>
+ </body>
+</html>
