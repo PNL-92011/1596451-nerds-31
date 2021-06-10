@@ -32,7 +32,7 @@
         <h1 class="shopMainHeader">Магазин готовых шаблонов</h1>
         
         <section>
-            <h2>Конфигуратор опций</h2> <!-- Hide -->
+            <h2 class="toHide">Конфигуратор опций</h2>
 
             <form method="GET" action="https://echo.htmlacademy.ru">
                 <h2 class="form-heads">Стоимость:</h2> 
@@ -64,7 +64,7 @@
             </form>         
         </section>
         <section>
-            <h2>Готовые шаблоны</h2> <!-- hide it --> 
+            <h2 class="toHide">Готовые шаблоны</h2>  
             <h3 class="sortIt-header">сортировать:</h3>
             <ul>
                 <li><button class="whatToSort wtsBold" type="button">по цене</button></li>
@@ -144,15 +144,17 @@
         
     </main>
 
-    <footer>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-            <li><a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png" alt="VK icon" ></a></li>
-            <li><a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a></li>
-            <li><a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a></li>
-        </ul>
-    </footer>
+    <footer class="footerBlock">
+        <div class="iconsBlock">
+          <a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png"alt="VK icon" ></a>
+          <a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a>
+          <a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a>
+        </div>
+        <div class="promo">
+          <h2 class="fotHeader">Давайте дружить, это выгодно!</h2>
+          <p class="disconts-10">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
 
   </body>
 </html>

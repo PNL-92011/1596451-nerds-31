@@ -6,18 +6,19 @@
     display: table;
     clear: both;
 }
+p {margin: 0px;}
 
-a {
-    text-decoration: none;
+a {text-decoration: none;}
+ul {list-style: none;}
+.page {
+    height: 100%;
+    min-width: 1200px;
 }
+.toHide {display: none;}
 
 img {
     width: max 100%;
     height: auto;
-}
-
-ul {
-    list-style: none;
 }
 
 :root {
@@ -39,7 +40,7 @@ ul {
     --textGreyLess: #666666;
 
 }
-body {
+.page-body {
     min-width: 960px;
     margin: 0px;
     padding: 0px;
@@ -52,8 +53,12 @@ body {
     background-color: var(--mainBackGround);
     background-position: center;
     background-repeat: no-repeat;
-
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
   }
+  
 
   .navi {background-color: transparent;}
 
@@ -67,7 +72,7 @@ body {
   }
   .site-navi a {color: var(--black);}
   .site-navi a:hover {color: var(--calmRed);}
-  .site-navi a:focus {color: var(--black);}
+  .site-navi a:focus {color: var(--black); opacity: 0.3;}
 
   .slogan {
     font-weight: 500;
@@ -92,6 +97,8 @@ body {
       height: 50px;
       width: 240px;
   }
+  .knowBut:hover {background-color: var(--hoverRed);}
+  .knowBut:active {background-color: var(--activeRed);}
 
   .gall-head {
     text-transform: uppercase;
@@ -117,9 +124,10 @@ body {
       color: var(--black);
   }
 
-  .whatWeCanDo-header {
+  .whatWeCanDo-header .loveExect-header {
       text-transform: uppercase;
       font-weight: 700;
+      line-height: 24px;
   }
 
   
@@ -127,9 +135,8 @@ body {
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
+    /* margin-bottom: 11px; */
   }
-
-  /* .perform-metrics {line-height: 18;} /*я не понимаю, почему когда раскомментирую все элементы разъезжаются */
 
 .fullName-header {
     font-weight: 700;
@@ -157,6 +164,9 @@ body {
     size: 36px;
     line-height: 36px;
     font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
 }
 
 .disconts-10 {line-height: 22px;}
@@ -262,3 +272,180 @@ body {
 }
 
 .nextNavi {width: 260px;}
+
+/* header */
+.index-header {
+    background-color: var(--footerBackGround);
+    width: 1440px;
+    height: 545px;
+    margin-bottom: 80px;
+}
+
+.breadCrumbs{
+    width: 1160px;
+    height: 66px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.site-navi {
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.basketBlock {
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: 60px;
+    color: var(--black);
+}
+.basketBlock:hover{color: var(--calmRed);}
+.basketBlock:active{color: var(--black); opacity: 0.3;}
+
+.bottomPartHeader{
+    margin-left: 140px;
+    margin-right: 143px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 80px;
+}
+
+.slideShowBlock {
+    width: 760px;
+    height: 431px;
+    margin-right: 143px;
+    margin-left: auto;
+}
+
+.slideImg {
+    
+    margin-left: auto;
+    margin-right: 0px;
+    background-color: transparent;
+}
+
+/* не работает */
+.slideImg, .button1, .button2, .button3 {
+    position: relative;
+}
+
+/* не работает */
+.button1 {
+    top: -50px;
+    left: 30px;
+}
+
+/* gallery */
+
+.galleryBlock{
+    width: 1100px;
+    height: 347px;
+    margin-left: 140px;
+    margin-right: 200px;
+    margin-bottom: 121px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    padding: 0px;
+}
+
+/* princips  */
+
+.principBlock {
+    width: 1174px;
+    height: 413px;
+    margin-left: 140px;
+    margin-right: 126px;
+    margin-bottom: 73px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.products {
+    padding: 0px;
+    /* list-style-image: url(../img/redDushForList.png); */
+    vertical-align: center;
+}
+
+.products li {
+    margin-top: 10px;
+}
+
+.products li:before {
+    color: red;
+    content: "-";  
+    padding-right: 10px; 
+    font-weight: bold;
+   }
+
+.advantages {
+    display: grid;
+    grid-template-rows: 208px 24px 64px;
+}
+
+.bigLogoBalls{
+    margin-bottom: 37px;
+}
+
+.loveExect-header{
+    margin: 37px auto 31px;
+}
+
+.advantList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px auto;
+    gap: 10px;
+    padding: 0px;
+}
+
+.portfolio-block {
+    width: 1159px;
+    height: 184px;
+    margin-left: 140px;
+    margin-bottom: 80px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 2px solid var(--footerBackGround);
+    border-bottom: 2px solid var(--footerBackGround);
+}
+
+.portfolio-block li {margin: auto 0px;}
+
+.bigMapBlock {
+    height: 416px; 
+    width: 1440px;
+    margin-bottom: 68px;
+}
+
+.footerBlock {
+    height: 81px; 
+    width: 1060px;
+    margin-left: 140px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.promo {
+    margin: auto;
+}
+
+.contactsBlock {
+    width: 319px;
+    height: 308px;
+    padding-left: 50px;
+    padding-top: 49px;
+    background-color: var(--mainBackGround);
+    display: inline-block;
+    outline: 1px solid yellowgreen;
+}
+
+.writeMeButt {margin-top: 37px;
+    
+}

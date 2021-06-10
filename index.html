@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-
-<!-- 
-- vk, fb, insta logs are white
--->
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -16,41 +12,52 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/nerds.css">
   </head>
-  <body>
-    <header>
-      <nav class="navi">
-        <a href="#"><img src="img/Nerds_logo_top_left.svg" alt="logo"></a>     
-        <ul class="site-navi">
-          <li><a href="blank.html">Студия</a> </li>
-          <li><a href="blank.html">Клиенты</a> </li>
-          <li><a href="catalog.html">Магазин</a> </li>
-          <li><a href="blank.html">Контакты</a> </li>
-          <li><a href="#"><img src="img/Basket.png" alt="bskt"> </a></li>
-          <li><a href="blank.html">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <h1>Nerds</h1> <!-- Hide -->
+  <body class="page-body">
+    <header class="index-header">
+      <div class="breadCrumbs">
+        <a class="logo_top_left" href="#"><img src="img/Nerds_logo_top_left.svg" alt="logo"></a> 
+        <nav class="navi">  
+          <ul class="site-navi">
+            <li><a href="blank.html">Студия</a> </li>
+            <li><a href="blank.html">Клиенты</a> </li>
+            <li><a href="catalog.html">Магазин</a> </li>
+            <li><a href="blank.html">Контакты</a> </li>
+          </ul>
+        </nav>
+        <div class="basketBlock">
+          <a><img src="img/Basket.png" alt="bskt"></a> 
+          <a class="basketOnHeader" href="blank.html">Корзина</a>
+        </div>
+      </div>
 
       <section>
-        <img src="img/Slide_show_Flying_phones.jpg" height="431" width="760" alt="Slide show. Flying phones">
-        <button type="button"></button> <!-- 3 buttons for slide show-->
-        <button type="button"></button>
-        <button type="button"></button>
+        <h1 class="toHide">Nerds</h1> 
+        
+        <div class="bottomPartHeader">
+          <div class="sloganBlock">
+            <h2 class="slogan">Долго, дорого,<br> скрупулезно.</h2>
+            <p>
+              Математически выверенный дизайн<br> 
+              для вашего сайта или мобильного приложения.
+            </p>
 
-        <h2 class="slogan">Долго, дорого,<br> скрупулезно.</h2>
-        <p>
-          Математически выверенный дизайн<br> 
-          для вашего сайта или мобильного приложения.
-        </p>
-
-        <button type="button" class="knowBut but">Узнать больше</button>
+            <button type="button" class="knowBut but">Узнать больше</button>
+          </div>
+          <div class="slideShowBlock">
+            <img class="slideImg" src="img/PNG_Slide_show_Flying_phones.png" height="431" width="760" alt="Slide show. Flying phones">
+            <button type="button1"><img src="img/active_slide_button.png" alt=""></button>  
+            <button type="button2"><img src="img/inactive_slide_button.png" alt=""></button>
+            <button type="button3"><img src="img/inactive_slide_button.png" alt=""></button>
+          </div>
+          
+        </div>
       </section>
 
+    </header>
+    <main>
       <section class="gallery">
-        <ul>
+        <ul class="galleryBlock">
           <li>
             <h3 class="gall-head">Веб-Сайты</h3>
             <img src="img/WebSites.jpg" alt="WebSites" height="146" width="300">
@@ -71,40 +78,42 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3 class="princips-header">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h3>
+      <div class="principBlock">
+        <section>
+          <h3 class="princips-header">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h3>
 
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-          превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+            превыше креатива. Работаем не покладая рук, как роботы.</p>
 
-        <h4 class="whatWeCanDo-header">Выполняем заказы на разработку:</h4>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <h4 class="whatWeCanDo-header">Выполняем заказы на разработку:</h4>
+          <ul class="products">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+        </section>
+        <section class="advantages">
+          <img class="bigLogoBalls" src="img/Big_logo_with_balls.jpg" alt="Big logo with balls" height="208" width="360">
+          <h4 class="loveExect-header">с 2004 года Любим точность во всем:</h4>
+          <ul class="advantList">
+            <li>
+              <p class="percents">146<sup>%</sup></p>
+              <p class="perform-metrics">Уровень<br>самоотдачи</p>
+            </li>
+            <li>
+              <p class="percents">100<sup>%</sup></p>
+              <p class="perform-metrics">Соблюдение<br>сроков</p>
+            </li>
+            <li>
+              <p class="percents">50<sup>%</sup></p>
+              <p class="perform-metrics">Минимальная<br>предоплата</p>
+            </li>
           </ul>
-      </section>
+        </section>
+      </div> <!-- principBlock -->
       <section>
-        <img src="img/Big_logo_with_balls.jpg" alt="Big logo with balls" height="208" width="360">
-        <h5 class="whatWeCanDo-header">с 2004 года Любим точность во всем:</h5>
-        <ul >
-          <li>
-            <p class="percents">146<sup>%</sup></p>
-            <p class="perform-metrics">Уровень<br>самоотдачи</p>
-          </li>
-          <li>
-            <p class="percents">100<sup>%</sup></p>
-            <p class="perform-metrics">Соблюдение<br>сроков</p>
-          </li>
-          <li>
-            <p class="percents">50<sup>%</sup></p>
-            <p class="perform-metrics">Минимальная<br>предоплата</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Portfolio</h2> <!-- hide -->
-        <ul>
+        <h2 class="toHide">Portfolio</h2>
+        <ul class="portfolio-block">
           <li><img src="img/logo_htmlacademy.png" alt="logo_htmlAcademy" 
             height="57" width="199"></li>
           <li><img src="img/borodinski_logo.png" alt="Borodinski" height="90" width="209"></li>
@@ -112,27 +121,32 @@
           <li><img src="img/Mishka_logo.png" alt="Mishka" height="84" width="173"></li>
         </ul>
       </section>
-      <section>
-        <img src="img/Big_map.jpg" alt="big map" height="416" width="1440">
+      <section class="map-block">
+        <div class="bigMapBlock">
+          <img src="img/Big_map.jpg" alt="big map" height="416" width="1440">
+        </div>
         <img src="img/comma_logo.jpg" alt="comma logo" height="190" width="231">
-
-        <h5 class="fullName-header">NЁRDS DESIGN STUDIO</h5>
-        <p class="address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург<br><br>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
-        </p>
-        <button type="button" class="writeMeButt  but">Напишите нам</button>
+        <div class="contactsBlock">
+          <h5 class="fullName-header">NЁRDS DESIGN STUDIO</h5>
+          <p class="address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург<br><br>
+            <a class="telephone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </p>
+          <button type="button" class="writeMeButt  but">Напишите нам</button>
+        </div>
       </section>
 
-      <footer>
+      
+    </main>
+    <footer class="footerBlock">
+      <div class="iconsBlock">
+        <a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png"alt="VK icon" ></a>
+        <a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a>
+        <a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a>
+      </div>
+      <div class="promo">
         <h2 class="fotHeader">Давайте дружить, это выгодно!</h2>
         <p class="disconts-10">Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-          <li><a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png"alt="VK icon" ></a></li>
-          <li><a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a></li>
-          <li><a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a></li>
-        </ul>
-      </footer>
-    </main>
-
+      </div>
+    </footer>
   </body>
 </html>
