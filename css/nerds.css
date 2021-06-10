@@ -158,38 +158,12 @@ img {
 .disconts-10 {line-height: 22px;}
 
 /* Catalog */
-.shopMainHeader {
-    font-size: 55px;
-    font-weight: 500;
-    line-height: 55px;
-}
-
-.form-heads {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-}
-
 .checkBoxFeatureSet input[type="checkbox"], 
 .checkBoxGridSet input[type="radio"] {
     line-height: 20;
 }
 
 .labels {line-height: 22px;}
-
-.price {
-    width: 80px;
-    height: 38px;
-    background-color: var(--footerBackGround);
-    text-align: center;
-    line-height: 22px;
-}
-
-.priceMeter {
-    width: 260px;
-    height: 80px;
-    background-color: var(--footerBackGround);
-}
 
 .showBut {
     line-height: 18px;
@@ -458,6 +432,7 @@ img {
     margin: 37px 50px 47px;
 }
 
+.writeMeButt {background-color: var(--calmRed);}
 .writeMeButt:hover {background-color: var(--hoverRed);}
 .writeMeButt:active {background-color: var(--activeRed); opacity: 0.3;}
 
@@ -475,4 +450,83 @@ img {
 .promo {
     margin: auto;
 }
+
+/* CATALOG */
+
+.catalog-header {
+    height: 355px;
+    width: 1440px;
+    background-color: var(--footerBackGround);
+}
+
+.shopMainHeader {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    margin: 87px 356px 108px 357px;
+}
+
+.main-catalog {
+    height: 2217px;
+    width: 1160px;
+    margin: 0px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.priceMeter {
+    width: 205px;
+    height: 2px;
+    padding-top: 39px;
+    padding-left: 33px;
+    padding-right: 22px;
+}
+
+.meterBlock {
+    height: 80px;
+    width: 260px;
+    border-radius: 3px;
+    background-color: var(--footerBackGround);
+    margin-top: 48px;
+    margin-left: 0px;
+}
+
+.form-heads {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-left: 0px;
+    padding-top: 55px;
+    text-transform: uppercase;
+}
+
+.price {
+    width: 80px;
+    height: 38px;
+    background-color: var(--footerBackGround);
+    text-align: center;
+    line-height: 22px;
+}
+
+.from span {padding-right: 11px;}
+.till span {padding-right: 12px;}
+
+.from, .till {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 14px;
+
+}
+
+.till {margin-left: 15px;}
+
+.net, .features-field {
+    width: 208px;
+}
+
+.form-heads {border: none;}
+
+.sedona-block{margin-top: 55px;}
+.pink-block{margin-top: 61px;}
+.pink-block ul li {display: inline-block;}
 
