@@ -1,18 +1,24 @@
 /* nerds styles 
 .knowBut - маловат размер
 */
-
-a {
-    text-decoration: none;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
+p {margin: 0px;}
+
+a {text-decoration: none;}
+ul {list-style: none;}
+.page {
+    height: 100%;
+    min-width: 1200px;
+}
+.toHide {display: none;}
 
 img {
     width: max 100%;
     height: auto;
-}
-
-ul {
-    list-style: none;
 }
 
 :root {
@@ -34,7 +40,7 @@ ul {
     --textGreyLess: #666666;
 
 }
-body {
+.page-body {
     min-width: 960px;
     margin: 0px;
     padding: 0px;
@@ -47,8 +53,12 @@ body {
     background-color: var(--mainBackGround);
     background-position: center;
     background-repeat: no-repeat;
-
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
   }
+  
 
   .navi {background-color: transparent;}
 
@@ -62,7 +72,13 @@ body {
   }
   .site-navi a {color: var(--black);}
   .site-navi a:hover {color: var(--calmRed);}
-  .site-navi a:focus {color: var(--black);}
+  .site-navi a:focus {color: var(--black); opacity: 0.3;}
+
+  .basketOnHeader {color: var(--black); font-weight: 500;}
+  .basketOnHeader:hover {color: var(--calmRed);}
+  .basketOnHeader:focus {color: var(--black); opacity: 0.3;}
+
+  .baskIMG {margin-left: 25px;}
 
   .slogan {
     font-weight: 500;
@@ -87,6 +103,8 @@ body {
       height: 50px;
       width: 240px;
   }
+  .knowBut:hover {background-color: var(--hoverRed);}
+  .knowBut:active {background-color: var(--activeRed); opacity: 0.3}
 
   .gall-head {
     text-transform: uppercase;
@@ -100,11 +118,11 @@ body {
   .goldBut {background-color: var(--calmGold);}
 
   .redBut:hover {background-color: var(--hoverRed);}
-  .redBut:active {background-color: var(--activeRed);}
+  .redBut:active {background-color: var(--activeRed); opacity: 0.3;}
   .greenBut:hover {background-color: var(--hoverGreen);}
-  .greenBut:active {background-color: var(--activeGreen);}
+  .greenBut:active {background-color: var(--activeGreen); opacity: 0.3}
   .goldBut:hover {background-color: var(--hoverGold);}
-  .goldBut:active {background-color: var(--activeGold);}
+  .goldBut:active {background-color: var(--activeGold); opacity: 0.3}
 
   .princips-header {
       font-size: 45px;
@@ -112,9 +130,10 @@ body {
       color: var(--black);
   }
 
-  .whatWeCanDo-header {
+  .whatWeCanDo-header .loveExect-header {
       text-transform: uppercase;
       font-weight: 700;
+      line-height: 24px;
   }
 
   
@@ -122,73 +141,29 @@ body {
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
+    /* margin-bottom: 11px; */
   }
 
-  /* .perform-metrics {line-height: 18;} /*я не понимаю, почему когда раскомментирую все элементы разъезжаются */
 
-.fullName-header {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--black);
-}
-
-.address {
-    line-height: 18px;
-    color: var(--textGreyLess);
-}
-
-.address a {color: var(--textGreyLess);}
-
-.writeMeButt {
-    height: 50px;
-    width: 219px;
-    border-radius: 3px;
-    background-color: var(--calmRed);
-    color: var(--mainBackGround);
-}
 
 .fotHeader {
     size: 36px;
     line-height: 36px;
     font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
 }
 
 .disconts-10 {line-height: 22px;}
 
 /* Catalog */
-.shopMainHeader {
-    font-size: 55px;
-    font-weight: 500;
-    line-height: 55px;
-}
-
-.form-heads {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-}
-
 .checkBoxFeatureSet input[type="checkbox"], 
 .checkBoxGridSet input[type="radio"] {
     line-height: 20;
 }
 
 .labels {line-height: 22px;}
-
-.price {
-    width: 80px;
-    height: 38px;
-    background-color: var(--footerBackGround);
-    text-align: center;
-    line-height: 22px;
-}
-
-.priceMeter {
-    width: 260px;
-    height: 80px;
-    background-color: var(--footerBackGround);
-}
 
 .showBut {
     line-height: 18px;
@@ -257,3 +232,301 @@ body {
 }
 
 .nextNavi {width: 260px;}
+
+/* header */
+.index-header {
+    background-color: var(--footerBackGround);
+    width: 1440px;
+    height: 545px;
+    margin-bottom: 80px;
+}
+
+.breadCrumbs{
+    width: 1160px;
+    height: 66px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.topleftLogo {
+    background-image: url(../img/Nerds_logo_top_left.svg);
+    background-repeat: no-repeat;
+}
+.topleftLogo:hover {background-image: url(../img/nerds-logo-top-left-HOVER.png);}
+.topleftLogo:active {background-image: url(../img/nerds-logo-top-left-ACTIVE.png);}
+
+.site-navi {
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.basketBlock {
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: 60px;
+    color: var(--black);
+}
+.basketBlock:hover{color: var(--calmRed);}
+.basketBlock:active{color: var(--black); opacity: 0.3;}
+
+.bottomPartHeader{
+    margin-left: 140px;
+    margin-right: 143px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 80px;
+}
+
+.slideShowBlock {
+    width: 760px;
+    height: 431px;
+    margin-right: 143px;
+    margin-left: auto;
+    background-image: url(../img/PNG_Slide_show_Flying_phones.png);
+}
+
+.slideImg {
+    
+    margin-left: auto;
+    margin-right: 0px;
+    background-color: transparent;
+}
+
+.button1 {
+    margin-top: 322px;
+    margin-right: auto;
+    margin-left: 139px;
+    border: none;
+    background-color: transparent;
+}
+.button2, .button3 {
+    border: none; 
+    background-color: transparent;
+}
+
+/* gallery */
+
+.galleryBlock{
+    width: 1100px;
+    height: 347px;
+    margin-left: 140px;
+    margin-right: 200px;
+    margin-bottom: 121px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    padding: 0px;
+}
+
+/* princips  */
+
+.principBlock {
+    width: 1174px;
+    height: 413px;
+    margin-left: 140px;
+    margin-right: 126px;
+    margin-bottom: 73px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.products {
+    padding: 0px;
+    /* list-style-image: url(../img/redDushForList.png); */
+    vertical-align: center;
+}
+
+.products li {
+    margin-top: 10px;
+}
+
+.products li:before {
+    color: red;
+    content: "-";  
+    padding-right: 10px; 
+    font-weight: bold;
+   }
+
+.advantages {
+    display: grid;
+    grid-template-rows: 208px 24px 64px;
+}
+
+.bigLogoBalls{
+    margin-bottom: 37px;
+}
+
+.loveExect-header{
+    margin: 37px auto 31px;
+}
+
+.advantList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px auto;
+    gap: 10px;
+    padding: 0px;
+}
+
+.portfolio-block {
+    width: 1159px;
+    height: 184px;
+    margin-left: 140px;
+    margin-bottom: 80px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 2px solid var(--footerBackGround);
+    border-bottom: 2px solid var(--footerBackGround);
+}
+
+.portfolio-block li {margin: auto 0px;}
+
+.bigMapBlock {
+    height: 416px; 
+    width: 1440px;
+    margin-bottom: 68px;
+    background-image: url(../img/Big_map_with_commaLogo.jpg);
+    background-repeat: no-repeat;
+}
+
+.contactsBlock {
+    width: 319px;
+    height: 308px;
+    margin-left: 140px;
+    margin-top: 54px;
+    background-color: var(--mainBackGround);
+    display: inline-block;
+    outline: 1px solid yellowgreen;
+}
+
+.fullName-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--black);
+    margin-top: 49px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.address {
+    line-height: 18px;
+    color: var(--textGreyLess);
+    margin: 23px 39px auto 50px;
+}
+
+.address a {color: var(--textGreyLess);}
+
+.writeMeButt {
+    height: 50px;
+    width: 219px;
+    border-radius: 3px;
+    background-color: var(--calmRed);
+    color: var(--mainBackGround);
+    margin: 37px 50px 47px;
+}
+
+.writeMeButt {background-color: var(--calmRed);}
+.writeMeButt:hover {background-color: var(--hoverRed);}
+.writeMeButt:active {background-color: var(--activeRed); opacity: 0.3;}
+
+.footerBlock {
+    height: 81px; 
+    width: 1060px;
+    margin-left: 140px;
+    margin-bottom: 68px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* .VK-icon:hover {background-image: url(../img/vk_icon_hover.png);} */
+
+.promo {
+    margin: auto;
+}
+
+/* CATALOG */
+
+.catalog-header {
+    height: 355px;
+    width: 1440px;
+    background-color: var(--footerBackGround);
+}
+
+.shopMainHeader {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    margin: 87px 356px 108px 357px;
+}
+
+.main-catalog {
+    height: 2217px;
+    width: 1160px;
+    margin: 0px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.priceMeter {
+    width: 205px;
+    height: 2px;
+    padding-top: 39px;
+    padding-left: 33px;
+    padding-right: 22px;
+}
+
+.meterBlock {
+    height: 80px;
+    width: 260px;
+    border-radius: 3px;
+    background-color: var(--footerBackGround);
+    margin-top: 48px;
+    margin-left: 0px;
+}
+
+.form-heads {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-left: 0px;
+    padding-top: 55px;
+    text-transform: uppercase;
+}
+
+.price {
+    width: 80px;
+    height: 38px;
+    background-color: var(--footerBackGround);
+    text-align: center;
+    line-height: 22px;
+}
+
+.from span {padding-right: 11px;}
+.till span {padding-right: 12px;}
+
+.from, .till {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 14px;
+
+}
+
+.till {margin-left: 15px;}
+
+.net, .features-field {
+    width: 208px;
+}
+
+.form-heads {border: none;}
+
+.sedona-block{margin-top: 55px;}
+.pink-block{margin-top: 61px;}
+.pink-block ul li {display: inline-block;}
+

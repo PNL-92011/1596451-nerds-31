@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- что делать с линиями горизонтальными  -->
 <html lang="ru">
   <head>
     <title>Магазин</title>
@@ -14,58 +13,74 @@
     <link rel="stylesheet" href="css/nerds.css">
   </head>
   <body>
-    <header>
-        <nav class="navi">
-          <a href="index.html"><img src="img/Nerds_logo_top_left.svg" alt="logo"></a>     
-          <ul class="site-navi">
-            <li><a href="index.html">Студия</a> </li>
-            <li><a href="blank.html">Клиенты</a> </li>
-            <li><a href="catalog.html">Магазин</a> </li>
-            <li><a href="blank.html">Контакты</a> </li>
-            <li><a href="#"><img src="img/Basket.png" alt="bskt"> </a></li>
-            <li><a href="blank.html">Корзина</a></li>
-          </ul>
-        </nav>
-    </header>
-
-    <main>
+    <header class="catalog-header">
+        <div class="breadCrumbs">
+            <div class="topleftLogo">
+              <!-- <a class="logo_top_left" href="#"><img src="img/Nerds_logo_top_left.svg" alt="logo"></a>  -->
+            </div>
+            <nav class="navi">  
+              <ul class="site-navi">
+                <li><a href="blank.html">Студия</a> </li>
+                <li><a href="blank.html">Клиенты</a> </li>
+                <li><a href="catalog.html">Магазин</a> </li>
+                <li><a href="blank.html">Контакты</a> </li>
+              </ul>
+            </nav>
+            <div class="basketBlock">
+              <a><img class="baskIMG" src="img/Basket.png" alt="bskt"></a> 
+              <a class="basketOnHeader" href="blank.html">Корзина</a>
+            </div>
+        </div>
         <h1 class="shopMainHeader">Магазин готовых шаблонов</h1>
-        
-        <section>
-            <h2>Конфигуратор опций</h2> <!-- Hide -->
-
-            <form method="GET" action="https://echo.htmlacademy.ru">
-                <h2 class="form-heads">Стоимость:</h2> 
+    </header>
+    <main class="main-catalog">
+        <form method="GET" action="https://echo.htmlacademy.ru">
+            <h2 class="toHide">Конфигуратор опций</h2>
+            <h2 class="form-heads">Стоимость:</h2> 
+            <div class="meterBlock">
                 <meter class="priceMeter" min="0" max="15000" value="10000"></meter>
-                <input class="price" type="number" name="from" value="0" id="startValue" min=0 max=15000>
-                    <label for="startValue" class="labels">от</label>
-                <input class="price" type="number" name="till" value="15000" id="endValue" min=0 max=15000>
-                    <label for="endValue" class="labels">до</label>
+            </div>
 
-                <fieldset>
-                    <legend class="form-heads">сетка:</legend>
-                    <ul class="checkBoxGridSet">
-                        <li><input type="radio" name="grid" id="adapt" value="adaptiv" checked><label for="adapt">Адаптивная</label></li>
-                        <li><input type="radio" name="grid" id="fix" value="fix"><label for="fix">Фиксированная</label></li>
-                        <li><input type="radio" name="grid" id="rubber" value="rubber"><label for="rubber">Резиновая</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend class="form-heads">особенности:</legend>
-                    <ul class="checkBoxFeatureSet">
-                        <li><input type="checkbox" name="slider" id="slder" checked><label for="slder">Слайдер</label></li>
-                        <li><input type="checkbox" name="advantages" id="advntgs"><label for="advntgs">Блок преимуществ</label></li>
-                        <li><input type="checkbox" name="news" id="nws" checked><label for="nws">Новости</label></li>
-                        <li><input type="checkbox" name="gallery" id="glry"><label for="glry">Галерея</label></li>
-                        <li><input type="checkbox" name="basket" id="bskt"><label for="bskt">Корзина</label></li>
-                    </ul>
-                </fieldset>
-                <button class="but showBut" type="submit">показать</button>
-            </form>         
-        </section>
-        <section>
-            <h2>Готовые шаблоны</h2> <!-- hide it --> 
+            <label class="from"><span>ОТ</span><input class="price" type="number" name="from" value="0" min=0 max=15000></label>
+            
+            <!-- <label for="endValue" class="labels">до</label> -->
+            <label class="till"><span>ДО</span><input class="price" type="number" name="till" value="15000" min=0 max=15000></label>
+            
+
+            <fieldset class="net">
+                <legend class="form-heads">сетка:</legend>
+                <ul class="checkBoxGridSet">
+                    <li><input type="radio" name="grid" id="adapt" value="adaptiv" checked><label for="adapt">Адаптивная</label></li>
+                    <li><input type="radio" name="grid" id="fix" value="fix"><label for="fix">Фиксированная</label></li>
+                    <li><input type="radio" name="grid" id="rubber" value="rubber"><label for="rubber">Резиновая</label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="features-field">
+                <legend class="form-heads">особенности:</legend>
+                <ul class="checkBoxFeatureSet">
+                    <li><input type="checkbox" name="slider" id="slder" checked><label for="slder">Слайдер</label></li>
+                    <li><input type="checkbox" name="advantages" id="advntgs"><label for="advntgs">Блок преимуществ</label></li>
+                    <li><input type="checkbox" name="news" id="nws" checked><label for="nws">Новости</label></li>
+                    <li><input type="checkbox" name="gallery" id="glry"><label for="glry">Галерея</label></li>
+                    <li><input type="checkbox" name="basket" id="bskt"><label for="bskt">Корзина</label></li>
+                </ul>
+            </fieldset>
+            <button class="but showBut" type="submit">показать</button>
+        </form>         
+        <div class="sedona-block">    
+            <h2 class="toHide">Готовые шаблоны</h2>  
             <h3 class="sortIt-header">сортировать:</h3>
+            <button type="button"></button> <!-- slides switcher -->
+            <button type="button"></button>
+            <button type="button"></button>
+                    
+            <img src="img/Sedona_screenshot.jpg" alt="Sedona screenshot" width="359" height="578">
+                    
+            <h3 class="projName">sedona</h3>
+            <p class="projDescr">Информационный сайт <br>для туристов</P>
+            <button class="projBut" type="button">9 900 ₽</button>
+        </div>
+        <div class="pink-block">
             <ul>
                 <li><button class="whatToSort wtsBold" type="button">по цене</button></li>
                 <li><button class="whatToSort" type="button">по типу</button></li>
@@ -73,86 +88,76 @@
                 <li><button class="whatToSort" type="button"><img src="img/icon-down-dir.png" alt="down triangle" width="11" height="10"></button></li>
                 <li><button class="whatToSort" type="button"><img src="img/icon-up-dir.png" alt="up triangle" width="11" height="10"></button></li>
             </ul>
-            <ul>
-                <li>
-                    <button type="button"></button> <!-- slides switcher -->
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    
-                    <img src="img/Sedona_screenshot.jpg" alt="Sedona screenshot" width="359" height="578">
-                    
-                    <h3 class="projName">sedona</h3>
-                    <p class="projDescr">Информационный сайт <br>для туристов</P>
-                    <button class="projBut" type="button">9 900 ₽</button>
-                </li>
-                <li>
-                    <button type="button"></button> <!-- slides switcher -->
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <img src="img/Pink_screenshot.jpg" alt="Pink screenshot" width="358" height="578">
-                    <h3 class="projName">Pink App</h3>
-                    <p class="projDescr">Продуктовый лендинг<br>приложения для iOS и Android</P>
-                    <button class="projBut" type="button">9 900 ₽</button>
-                </li>
-                <li>
-                    <button type="button"></button> <!-- slides switcher -->
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <img src="img/Borodinski_screenshot.jpg" alt="Borodinski screenshot" width="358" height="578">
-                </li>
-                <li>
-                    <button type="button"></button> <!-- slides switcher -->
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <img src="img/HandMade_screenshot.jpg" alt="HandMade screenshot" width="359" height="578">
-                </li>
-                <li>
-                    <button type="button"></button> <!-- slides switcher -->
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <img src="img/School_screenshot.jpg" alt="School screenshot" width="359" height="578">
-                </li>
-                <li>
-                    <button type="button"></button> <!-- slides switcher -->
-                    <button type="button"></button>
-                    <button type="button"></button>
-                    <img src="img/Kraft_screenshot.jpg" alt="Kraft screenshot" width="359" height="578">
-                    <h3 class="projName">Квас</h3>
-                    <p class="projDescr">Промо-сайт производителя<br>крафтового кваса</p>
-                    <button class="projBut" type="button">9 900 ₽</button>
-                </li>
-            </ul>
-            <ul>
-                <li><button class="shablNavi" type="button">1</button></li>
-                <li><button class="shablNavi" type="button">2</button></li>
-                <li><button class="shablNavi" type="button">3</button></li>
-                <li><button class="shablNavi nextNavi" type="button">Следующая</button></li>
-            </ul>
-
-        </section>
-
-        <section>
-            <img src="img/Big_map.jpg" alt="big map" height="416" width="1440">
-            <img src="img/comma_logo.jpg" alt="comma logo" height="190" width="231">
-    
+            
+            <button type="button"></button> <!-- slides switcher -->
+            <button type="button"></button>
+            <button type="button"></button>
+            <img src="img/Pink_screenshot.jpg" alt="Pink screenshot" width="358" height="578">
+            <h3 class="projName">Pink App</h3>
+            <p class="projDescr">Продуктовый лендинг<br>приложения для iOS и Android</P>
+            <button class="projBut" type="button">9 900 ₽</button>
+        </div>
+        <div></div>
+        <div class="borodino-block">
+            <button type="button"></button> <!-- slides switcher -->
+            <button type="button"></button>
+            <button type="button"></button>
+            <img src="img/Borodinski_screenshot.jpg" alt="Borodinski screenshot" width="358" height="578">
+        </div>
+        <div class="handMade-block">
+            <button type="button"></button> <!-- slides switcher -->
+            <button type="button"></button>
+            <button type="button"></button>
+            <img src="img/HandMade_screenshot.jpg" alt="HandMade screenshot" width="359" height="578">
+        </div>
+        <div></div>
+        <div class="school-block">
+            <button type="button"></button> <!-- slides switcher -->
+            <button type="button"></button>
+            <button type="button"></button>
+            <img src="img/School_screenshot.jpg" alt="School screenshot" width="359" height="578">
+        </div>
+        <div class="kraft-block">
+            <button type="button"></button> <!-- slides switcher -->
+            <button type="button"></button>
+            <button type="button"></button>
+            <img src="img/Kraft_screenshot.jpg" alt="Kraft screenshot" width="359" height="578">
+            <h3 class="projName">Квас</h3>
+            <p class="projDescr">Промо-сайт производителя<br>крафтового кваса</p>
+            <button class="projBut" type="button">9 900 ₽</button>
+        </div>
+        <div></div>    
+        <div class="page-navi-block">
+            <li><button class="shablNavi" type="button">1</button></li>
+            <li><button class="shablNavi" type="button">2</button></li>
+            <li><button class="shablNavi" type="button">3</button></li>
+            <li><button class="shablNavi nextNavi" type="button">Следующая</button></li>
+        </div>
+    </main>
+    <section class="map-block">
+        <div class="bigMapBlock">
+            <div class="contactsBlock">
             <h5 class="fullName-header">NЁRDS DESIGN STUDIO</h5>
             <p class="address">наб. Реки Карповки, <br>5 лит П, Санкт-Петербург<br><br>
-              <a href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="telephone" href="tel:+78005558628">+7 800 555-86-28</a>
             </p>
             <button type="button" class="writeMeButt  but">Напишите нам</button>
-        </section>
+            </div>
+        </div>
+    </section>
+    <footer class="footerBlock">
         
-    </main>
-
-    <footer>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <ul>
-            <li><a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png" alt="VK icon" ></a></li>
-            <li><a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a></li>
-            <li><a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a></li>
-        </ul>
-    </footer>
+        <div class="iconsBlock">
+            <a class="VK-icon" href="blank.html"><img src="img/vk_icon_full.png"alt="VK icon" ></a>
+            <!-- <a class="VK-icon" href="blank.html"></a> -->
+            <a class="FB_icon" href="blank.html"><img src="img/fb_icon_full.png" alt="FaceBook icon"></a>
+            <a class="Insta_icon" href="blank.html"><img src="img/instagram_icon_full.png" alt="Instagram icon"></a>
+        </div>
+        <div class="promo">
+            <h2 class="fotHeader">Давайте дружить, это выгодно!</h2>
+            <p class="disconts-10">Скидка 10% для друзей из социальных сетей.</p>
+        </div>  
+      </footer>
 
   </body>
 </html>
