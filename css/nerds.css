@@ -53,6 +53,7 @@ img {
     background-color: var(--mainBackGround);
     background-position: center;
     background-repeat: no-repeat;
+    
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
