@@ -79,7 +79,6 @@ h1, h2, h3, h4, h5 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      outline: 1px solid yellowgreen;
   }
 
   .logo_top_left {
@@ -90,7 +89,6 @@ h1, h2, h3, h4, h5 {
   .site-navi {
       display: flex;
       justify-content: space-between;
-      outline: 1px solid yellowgreen;
   }
 
   .site-navi li {
@@ -121,13 +119,11 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    outline: 1px solid red;
   }
 
   .sloganBlock {
       display: flex;
       flex-direction: column;
-      outline: 1px solid yellowgreen;
       padding-top: 78px;
   }
 
@@ -165,13 +161,11 @@ h1, h2, h3, h4, h5 {
     height: 431px;
     background-image: url(../img/PNG_Slide_show_Flying_phones.png);
     background-repeat: no-repeat;
-    outline: 1px solid yellowgreen;
   }
   
   .slideShowBlock div {
     width: 88px;
     height: 18px;
-    outline: 1px solid yellowgreen;
     margin-top: 317px;
     margin-left: 139px;
   }
@@ -186,7 +180,6 @@ h1, h2, h3, h4, h5 {
     height: 347px;
     margin: 0 auto;
     margin-bottom: 121px;
-    outline: 1px solid red;
 }
 
 .galleryBlock {
@@ -195,7 +188,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .galleryBlock li {
-    outline: 1px solid yellowgreen;
     display: flex;
     flex-direction: column;
 }
@@ -237,7 +229,6 @@ h1, h2, h3, h4, h5 {
     width: 1160px;
     height: 413px;
     margin: 0 auto;
-    outline: 1px solid red;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 42px;
@@ -245,7 +236,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .principBlock-center section {
-    outline: 1px solid yellowgreen;
     height: 413px;
 }
 
@@ -327,7 +317,6 @@ h1, h2, h3, h4, h5 {
     width: 1160px;
     height: 184px;
     margin: 0 auto;
-    outline: 1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -369,7 +358,6 @@ h1, h2, h3, h4, h5 {
     color: var(--textGreyLess);
     width: 230px;
     height: 72px;
-    outline: 1px solid yellowgreen;
     margin-left: 50px;
     margin-bottom: 37.29px;
 }
@@ -406,14 +394,12 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 68px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    outline: 1px solid yellowgreen;
 }
 
 .promo {
     width: 660px;
     margin-left: 139px;
     margin-right: auto;
-    outline: 1px solid yellowgreen;
 }
 .promo h2 {
     margin-top: 0px;
@@ -449,7 +435,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-center {
-    outline: 1px solid red;
     width: 1160px;
     margin-left: 140px;
     display: grid;
@@ -460,7 +445,6 @@ h1, h2, h3, h4, h5 {
 /* форма */
 .main-center form {
     width: 260px;
-    outline: 1px solid yellowgreen;
     display: flex;
     flex-direction: column;
 }
@@ -542,7 +526,6 @@ h1, h2, h3, h4, h5 {
 
 /* Проекты */
 .proj_blocks {
-    outline: 1px solid yellowgreen;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -567,7 +550,6 @@ h1, h2, h3, h4, h5 {
     background-repeat: no-repeat;
     width: 359px;
     height: 578px;
-    outline: 1px solid yellowgreen;
     padding-top: 349px;
     box-sizing: border-box;
     margin-bottom: 32px;
@@ -645,7 +627,6 @@ h1, h2, h3, h4, h5 {
     width: 358px;
     height: 578px;
     padding-top: 348px;
-    outline: 1px solid yellowgreen;
     box-sizing: border-box;
     margin-bottom: 32px;
 }
@@ -683,7 +664,6 @@ h1, h2, h3, h4, h5 {
     width: 359px;
     height: 578px;
     padding-top: 348px;
-    outline: 1px solid yellowgreen;
     box-sizing: border-box;
     margin-bottom: 32px;
 }
