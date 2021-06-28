@@ -203,6 +203,10 @@ h1, h2, h3, h4, h5 {
     margin: 17px 54px 15px 54px;
   }
 
+  .knowBut:hover {background-color: var(--hoverRed);}
+  .knowBut:active {background-color: var(--activeRed);}
+  .knowBut span:active {opacity: 0.3;}
+
   .slideShowBlock {
     width: 760px;
     height: 431px;
