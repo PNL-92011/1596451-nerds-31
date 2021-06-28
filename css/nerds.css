@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5 {
     --textGreyLess: #666666;
     --basketGrey: #A6A6A6;
     --border: #DBDBDB;
+    --borderGrey: #888888;
 }
 
 .page-body {
@@ -70,7 +71,6 @@ h1, h2, h3, h4, h5 {
   
   /* ХЕДЕР */
   .header {
-      /* width: 100%; */
       background-color: var(--footerBackGround);
       padding-top: 49px;
   }
@@ -288,6 +288,18 @@ h1, h2, h3, h4, h5 {
 .green {background-color: var(--calmGreen);}
 .gold {background-color: var(--calmGold);}
 
+.red:hover {background-color: var(--hoverRed);}
+.green:hover {background-color: var(--hoverGreen);}
+.gold:hover {background-color: var(--hoverGold);}
+
+.red:active {background-color: var(--activeRed);}
+.green:active {background-color: var(--activeGreen);}
+.gold:active {background-color: var(--activeGold);}
+
+.red span:active, .green span:active, .gold span:active {
+    opacity: 0.3;
+}
+
 /* ПРИНЦИПЫ */
 
 .principBlock-center {
@@ -334,10 +346,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .products li:before {
-    color: red;
-    content: "-";  
-    padding-right: 10px; 
-    font-weight: bold;
+    display: inline-block;
+    /* position: absolute; */
+    content: "";  
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: var(--calmRed);
    }
 
 .advantages {
@@ -386,7 +402,75 @@ h1, h2, h3, h4, h5 {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 80px;
+    border-top: 2px solid var(--footerBackGround);
+    border-bottom: 2px solid var(--footerBackGround);
 }
+
+.htmlAcadLogo {
+    display: block;
+    height: 57px; 
+    width: 199px;
+    background-image: url(../img/logo_htmlacademy.png); 
+}
+
+.htmlAcadLogo:hover {background-image: url(../img/logo_htmlAcademy-hover.png);}
+
+.htmlAcadLogo:active {background-image: url(../img/logo_htmlacademy-active.png);}
+
+.vertyStick {
+    display: block;
+    content: "";  
+    top: 10px;
+    left: 20px;
+    width: 2px;
+    height: 52px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: var(--footerBackGround);
+}
+
+.borodLogo {
+    display: block;
+    height: 90px; 
+    width: 209px;
+    background-image: url(../img/logo_Borodinskiy.png); 
+}
+
+.borodLogo:hover {background-image: url(../img/logo_Borodinskiy-hover.png);}
+
+.borodLogo:active {background-image: url(../img/logo_Borodinskiy-active.png);}
+
+/* .htmlAcadLogo::before {
+    display: inline-block;
+    content: "";  
+    width: 2px;
+    height: 52px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: var(--footerBackGround);
+} */
+
+.pinkLogo {
+    display: block;
+    height: 52px; 
+    width: 185px;
+    background-image: url(../img/Pink_logo.png); 
+}
+
+.pinkLogo:hover {background-image: url(../img/logo_pink_hover.png);}
+
+.pinkLogo:active {background-image: url(../img/logo_pink_active.png);}
+
+.mishLogo {
+    display: block;
+    height: 84px; 
+    width: 173px;
+    background-image: url(../img/Mishka_logo.png); 
+}
+
+.mishLogo:hover {background-image: url(../img/logo_mishka_hover.png);}
+
+.mishLogo:active {background-image: url(../img/logo_mishka_active.png);}
 
 /* big map block */
 
