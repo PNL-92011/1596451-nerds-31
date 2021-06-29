@@ -51,9 +51,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-body {
-    /* width: 1440px; */
-    /* margin-left: auto;
-    margin-right: auto; */
     padding: 0px;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
@@ -472,16 +469,39 @@ h1, h2, h3, h4, h5 {
 
 .mishLogo:active {background-image: url(../img/logo_mishka_active.png);}
 
+/* FOOTER */
 /* big map block */
+
+.footerBlock {
+    height: 633px; 
+    
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3fr; */
+}
 
 .bigMapBlock {
     height: 416px; 
-    width: 1440px;
-    margin-bottom: 68px;
-    padding-top: 54px;
-    padding-left: 140px;
-    background-image: url(../img/Big_map_with_commaLogo.jpg);
+    background-image: url(../img/Big_map.jpg); 
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1px;
+}
+
+.mapCenter {
+    width: 1160px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 270px
+
+}
+
+.whiteCommaLogo {
+    margin-top: 70px;
+    width: 231;
+    height: 190px;
+    /* background-image: url(../img/whiteCommaLogo.png);
+    background-repeat: no-repeat; */
 }
 
 .contactsBlock {
@@ -490,6 +510,7 @@ h1, h2, h3, h4, h5 {
     background-color: var(--mainBackGround);
     display: flex;
     flex-direction: column;
+    margin-top: 53px;
 }
 
 .contactsBlock h5 {
@@ -525,6 +546,10 @@ h1, h2, h3, h4, h5 {
     margin-left: 50px;
 }
 
+.writeMeButt:hover {background-color: var(--hoverRed);}
+.writeMeButt:active {background-color: var(--activeRed);}
+.writeMeButt span:active {opacity: 0.3;}
+
 .writeMeButt span {
     font-weight: 500;
     line-height: 18px;
@@ -534,16 +559,45 @@ h1, h2, h3, h4, h5 {
     margin: 17px 44px 15px 44px;
 }
 
-/* FOOTER */
-
-.footerBlock {
-    height: 81px; 
-    width: 1060px;
-    margin-left: 140px;
-    margin-bottom: 68px;
+.iconCenter {
+    width: 1160px;
+    margin: 68px auto;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+
+.iconsBlock {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsBlock a {width: 81px; height: 81px;}
+
+.VK-icon {
+    display: block;
+    background-image: url(../img/vk_icon_full.png);
+}
+
+.VK-icon:hover {background-image: url(../img/vk_icon_hover.png);}
+.VK-icon:active {background-image: url(../img/vk_icon_active.png);}
+
+.FB_icon {
+    display: block;
+    background-image: url(../img/fb_icon_full.png);
+}
+
+.FB_icon:hover {background-image: url(../img/fb_icon_hover.png);}
+.FB_icon:active {background-image: url(../img/fb_icon_active.png);}
+
+.Insta_icon {
+    display: block;
+    background-image: url(../img/instagram_icon_full.png);
+}
+
+.Insta_icon:hover {background-image: url(../img/instagram_icon_hover.png);}
+.Insta_icon:active {background-image: url(../img/instagram_icon_active.png);}
+
 
 .promo {
     width: 660px;
@@ -563,6 +617,10 @@ h1, h2, h3, h4, h5 {
     line-height: 22px;
     color: var(--textGreyMid);
 }
+
+
+
+
 
 /* страница КАТАЛОГ */
 
