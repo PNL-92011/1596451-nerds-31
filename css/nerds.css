@@ -25,7 +25,20 @@ h1, h2, h3, h4, h5 {
     margin-right: 0px ;
     }
 
-.toHide {display: none;}
+/* .toHide {display: none;} */
+
+.toHide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 :root {
     --mainBackGround: #FFFFFF;
@@ -45,13 +58,12 @@ h1, h2, h3, h4, h5 {
     --textGreyMid: #444444;
     --bkgrGrey: #4D4D4D;
     --textGreyLess: #666666;
+    --basketGrey: #A6A6A6;
     --border: #DBDBDB;
+    --borderGrey: #888888;
 }
 
 .page-body {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0px;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
@@ -69,7 +81,6 @@ h1, h2, h3, h4, h5 {
   
   /* ХЕДЕР */
   .header {
-      width: 1440px;
       background-color: var(--footerBackGround);
       padding-top: 49px;
   }
@@ -86,32 +97,76 @@ h1, h2, h3, h4, h5 {
   .logo_top_left {
       width: 160px;
       height: 65px;
+      background-image: url(../img/Nerds_logo_top_left.svg);
   }
 
+  .logo_top_left:hover {
+      background-image: url(../img/nerds-logo-top-left-HOVER.png);
+  }
+
+  .logo_top_left:active {
+    background-image: url(../img/nerds-logo-top-left-ACTIVE.png);
+  }
+
+
+
   .site-navi {
+      margin-top: auto;
+      margin-bottom:auto;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
   }
 
   .site-navi li {
       margin-right: 45px;
+      padding: 0px;
+      
   }
 
   .site-navi li a {
     color: var(--black);
-    line-height: 30px;
     font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .site-navi li a:hover {color: var(--calmRed);}
+  .site-navi li a:active {
+    color: var(--black); 
+    opacity: 30;
   }
 
   .basket {
     color: var(--black);
-    line-height: 30px;
     font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  /* под хедером */
+  .basket::before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 25px;
+      background-image: url(../img/basketSVG.svg);
+      background-repeat: no-repeat;
+  }
+  
+  .basket:hover {color: var(--calmRed);}
+  .basket:active {
+      color: var(--black); 
+      opacity: 30;
+  }
+  
+
   .bottomHeader {
-    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
     background-color: var(--footerBackGround);
   }
 
@@ -158,6 +213,10 @@ h1, h2, h3, h4, h5 {
     margin: 17px 54px 15px 54px;
   }
 
+  .knowBut:hover {background-color: var(--hoverRed);}
+  .knowBut:active {background-color: var(--activeRed);}
+  .knowBut span:active {opacity: 0.3;}
+
   .slideShowBlock {
     width: 760px;
     height: 431px;
@@ -174,7 +233,9 @@ h1, h2, h3, h4, h5 {
 
 /* Галлерея */
 .main {
-    width: 1440px;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery-center {
@@ -237,6 +298,18 @@ h1, h2, h3, h4, h5 {
 .green {background-color: var(--calmGreen);}
 .gold {background-color: var(--calmGold);}
 
+.red:hover {background-color: var(--hoverRed);}
+.green:hover {background-color: var(--hoverGreen);}
+.gold:hover {background-color: var(--hoverGold);}
+
+.red:active {background-color: var(--activeRed);}
+.green:active {background-color: var(--activeGreen);}
+.gold:active {background-color: var(--activeGold);}
+
+.red span:active, .green span:active, .gold span:active {
+    opacity: 0.3;
+}
+
 /* ПРИНЦИПЫ */
 
 .principBlock-center {
@@ -283,10 +356,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .products li:before {
-    color: red;
-    content: "-";  
-    padding-right: 10px; 
-    font-weight: bold;
+    display: inline-block;
+    /* position: absolute; */
+    content: "";  
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: var(--calmRed);
    }
 
 .advantages {
@@ -335,18 +412,109 @@ h1, h2, h3, h4, h5 {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 80px;
+    border-top: 2px solid var(--footerBackGround);
+    border-bottom: 2px solid var(--footerBackGround);
 }
 
+.htmlAcadLogo {
+    display: block;
+    height: 57px; 
+    width: 199px;
+    background-image: url(../img/logo_htmlacademy.png); 
+}
+
+.htmlAcadLogo:hover {background-image: url(../img/logo_htmlAcademy-hover.png);}
+
+.htmlAcadLogo:active {background-image: url(../img/logo_htmlacademy-active.png);}
+
+.vertyStick {
+    display: block;
+    content: "";  
+    top: 10px;
+    left: 20px;
+    width: 2px;
+    height: 52px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: var(--footerBackGround);
+}
+
+.borodLogo {
+    display: block;
+    height: 90px; 
+    width: 209px;
+    background-image: url(../img/logo_Borodinskiy.png); 
+}
+
+.borodLogo:hover {background-image: url(../img/logo_Borodinskiy-hover.png);}
+
+.borodLogo:active {background-image: url(../img/logo_Borodinskiy-active.png);}
+
+/* .htmlAcadLogo::before {
+    display: inline-block;
+    content: "";  
+    width: 2px;
+    height: 52px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    background-color: var(--footerBackGround);
+} */
+
+.pinkLogo {
+    display: block;
+    height: 52px; 
+    width: 185px;
+    background-image: url(../img/Pink_logo.png); 
+}
+
+.pinkLogo:hover {background-image: url(../img/logo_pink_hover.png);}
+
+.pinkLogo:active {background-image: url(../img/logo_pink_active.png);}
+
+.mishLogo {
+    display: block;
+    height: 84px; 
+    width: 173px;
+    background-image: url(../img/Mishka_logo.png); 
+}
+
+.mishLogo:hover {background-image: url(../img/logo_mishka_hover.png);}
+
+.mishLogo:active {background-image: url(../img/logo_mishka_active.png);}
+
+/* FOOTER */
 /* big map block */
+
+.footerBlock {
+    height: 633px; 
+    
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3fr; */
+}
 
 .bigMapBlock {
     height: 416px; 
-    width: 1440px;
-    margin-bottom: 68px;
-    padding-top: 54px;
-    padding-left: 140px;
-    background-image: url(../img/Big_map_with_commaLogo.jpg);
+    background-image: url(../img/Big_map.jpg); 
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1px;
+}
+
+.mapCenter {
+    width: 1160px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 270px
+
+}
+
+.whiteCommaLogo {
+    margin-top: 70px;
+    width: 231;
+    height: 190px;
+    /* background-image: url(../img/whiteCommaLogo.png);
+    background-repeat: no-repeat; */
 }
 
 .contactsBlock {
@@ -355,6 +523,7 @@ h1, h2, h3, h4, h5 {
     background-color: var(--mainBackGround);
     display: flex;
     flex-direction: column;
+    margin-top: 53px;
 }
 
 .contactsBlock h5 {
@@ -390,6 +559,10 @@ h1, h2, h3, h4, h5 {
     margin-left: 50px;
 }
 
+.writeMeButt:hover {background-color: var(--hoverRed);}
+.writeMeButt:active {background-color: var(--activeRed);}
+.writeMeButt span:active {opacity: 0.3;}
+
 .writeMeButt span {
     font-weight: 500;
     line-height: 18px;
@@ -399,16 +572,45 @@ h1, h2, h3, h4, h5 {
     margin: 17px 44px 15px 44px;
 }
 
-/* FOOTER */
-
-.footerBlock {
-    height: 81px; 
-    width: 1060px;
-    margin-left: 140px;
-    margin-bottom: 68px;
+.iconCenter {
+    width: 1160px;
+    margin: 68px auto;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+
+.iconsBlock {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsBlock a {width: 81px; height: 81px;}
+
+.VK-icon {
+    display: block;
+    background-image: url(../img/vk_icon_full.png);
+}
+
+.VK-icon:hover {background-image: url(../img/vk_icon_hover.png);}
+.VK-icon:active {background-image: url(../img/vk_icon_active.png);}
+
+.FB_icon {
+    display: block;
+    background-image: url(../img/fb_icon_full.png);
+}
+
+.FB_icon:hover {background-image: url(../img/fb_icon_hover.png);}
+.FB_icon:active {background-image: url(../img/fb_icon_active.png);}
+
+.Insta_icon {
+    display: block;
+    background-image: url(../img/instagram_icon_full.png);
+}
+
+.Insta_icon:hover {background-image: url(../img/instagram_icon_hover.png);}
+.Insta_icon:active {background-image: url(../img/instagram_icon_active.png);}
+
 
 .promo {
     width: 660px;
@@ -429,19 +631,19 @@ h1, h2, h3, h4, h5 {
     color: var(--textGreyMid);
 }
 
-/* страница КАТАЛОГ */
+/* страница КАТАЛОГ **********************/
 
 .catal_bot_head {
-    width: 1440px;
     height: 241px;
     background-color: var(--footerBackGround);
-    margin-bottom: 55px;
+    padding-top: 87px;
+    box-sizing: border-box;
+    display: grid; /* странное место */
 }
 
 .catal_bot_head h1 {
-    display: inline-block;
-    margin-top: 78px;
-    margin-left: 357px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -453,6 +655,9 @@ h1, h2, h3, h4, h5 {
     margin-left: 140px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 55px;
 }
 
@@ -526,6 +731,68 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 50px;
 }
 
+.featOpti, .netOpti {padding-left: 39px;}
+
+.featOpti label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.inpchkbx + label::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: -36px;
+    top: 0;
+    border: 2px solid var(--bkgrGrey);
+}
+
+.inpchkbx:checked + label::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: -36px;
+    top: 0px;
+    border: none;
+    background-image: url(../img/checked_bar.svg);
+    background-repeat: no-repeat;
+}
+
+.netOpti label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.inpRadio + label::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: -36px;
+    top: 0;
+    border: 2px solid var(--bkgrGrey);
+    border-radius: 50%;
+}
+
+.inpRadio:checked + label::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: -36px;
+    top: 0px;
+    border: none;
+    background-image: url(../img/radio_checked.svg);
+    background-repeat: no-repeat;
+}
+
+
 .showBut {
     height: 50px;
     background-color: var(--footerBackGround);
@@ -538,7 +805,7 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
-/* Проекты */
+/* Проекты **************************/
 .proj_blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
