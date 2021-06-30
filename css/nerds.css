@@ -769,6 +769,8 @@ h1, h2, h3, h4, h5 {
     user-select: none;
 }
 
+
+
 .inpRadio + label::before {
     content: "";
     position: absolute;
@@ -776,8 +778,10 @@ h1, h2, h3, h4, h5 {
     height: 23px;
     left: -36px;
     top: 0;
-    border: 2px solid var(--bkgrGrey);
-    border-radius: 50%;
+    background-image: url(../img/circle.svg);
+    background-repeat: no-repeat;
+    /* border: 2px solid var(--bkgrGrey);
+    border-radius: 50%; */
 }
 
 .inpRadio:checked + label::before {
@@ -788,7 +792,7 @@ h1, h2, h3, h4, h5 {
     left: -36px;
     top: 0px;
     border: none;
-    background-image: url(../img/radio_checked.svg);
+    background-image: url(../img/circle_checked.svg);
     background-repeat: no-repeat;
 }
 
