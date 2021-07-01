@@ -747,26 +747,28 @@ h1, h2, h3, h4, h5 {
 
 .fromTillBlock {
   margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .from input, .till input {
-    width: 60px;
+    width: 80px;
     height: 38px;
     border: none;
     background-color: var(--footerBackGround);
     border-radius: 3px;
     padding: 10px;
-    /* margin-left: 5px; */
+    box-sizing: border-box;
+    text-align: center;
+    
 }
 
 .from span, .till span {
     line-height: 22px;
     text-transform: uppercase;
     color: var(--textGrey);
+    margin-right: 11px;
 }
-
-.till span {margin-left: 30px;}
-
 
 
 .form-heads {
@@ -813,7 +815,7 @@ h1, h2, h3, h4, h5 {
 .inpchkbx:hover + label::before {
   content: "";
   position: absolute;
-  width: 23px;
+  width: 25px;
   height: 23px;
   left: -36px;
   top: 0;
@@ -823,7 +825,7 @@ h1, h2, h3, h4, h5 {
 .inpchkbx:checked + label::before {
     content: "";
     position: absolute;
-    width: 23px;
+    width: 25px;
     height: 23px;
     left: -36px;
     top: 0px;
@@ -835,7 +837,7 @@ h1, h2, h3, h4, h5 {
 .inpchkbx:checked:hover + label::before {
   content: "";
   position: absolute;
-  width: 23px;
+  width: 25px;
   height: 23px;
   left: -36px;
   top: 0px;
@@ -876,8 +878,8 @@ h1, h2, h3, h4, h5 {
 .inpRadio:checked + label::before {
     content: "";
     position: absolute;
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     left: -36px;
     top: 0px;
     border: none;
