@@ -16,10 +16,10 @@
     <header class="header">
       <div class="header_center">
         <a class="logo_top_left" href="index.html"></a>
-        <ul class="site-navi">
+        <ul class="site-navi catal_breadcrumbs">
           <li><a href="index.html">Студия</a> </li>
           <li><a href="blank.html">Клиенты</a> </li>
-          <li><a href="catalog.html">Магазин</a> </li>
+          <li class="shop"><a href="catalog.html">Магазин</a> </li>
           <li><a href="blank.html">Контакты</a> </li>
         </ul>
         <a class="basket" href="blank.html">Корзина</a>
@@ -36,14 +36,22 @@
 
         <form class="form" method="GET" action="https://echo.htmlacademy.ru">
           <h2 class="toHide">Конфигуратор опций</h2>
+          
           <h2 class="form-heads">Стоимость:</h2>
           <div class="meterBlock">
-            <meter class="priceMeter" min="0" max="15000" value="10000"></meter>
+            <div class="progressLine">
+              <div class="greenProgrLine"></div>
+            </div>
+            <div class="toggler togLeft"></div>
+            <div class="toggler togRight"></div>
           </div>
-          <div class="metrBlock">
-            <label class="from"><span>ОТ</span><input class="price" type="number" name="from" value="0" min=0 max=15000></label>
-
-            <label class="till"><span>ДО</span><input class="price" type="number" name="till" value="15000" min=0 max=15000></label>
+          <div class="fromTillBlock">
+            <label class="from"><span>ОТ</span>
+              <input class="price" type="number" name="from" value="0" min=0 max=15000>
+            </label>
+            <label class="till"><span>ДО</span>
+              <input class="price" type="number" name="till" value="15000" min=0 max=15000>
+            </label>
           </div>
 
           <fieldset class="net">
@@ -95,19 +103,13 @@
             <h2 class="toHide">Готовые шаблоны</h2>
 
             <h3 class="sortIt-header">сортировать:</h3>
-            <div class="upSedonaBar">
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-            </div>
+            <div class="upPinkBar"></div>
             <div class="sedona">
               <div class="sedona_info">
                 <h3>sedona</h3>
                 <p>Информационный сайт</p>
                 <p>для туристов</p>
-                <div class="projButt">
-                  <a class="projBut" href="blank.html"><span>9 900 ₽</span></a>
-                </div>
+                <a class="projButt" href="blank.html"><span>9 900 ₽</span></a>
               </div>
             </div>
           </div>
@@ -116,15 +118,11 @@
               <li><a class="onPrice" href="blank.html"><span>по цене</span></a></li>
               <li><a class="onTipe"><span>по типу</span></a></li>
               <li><a class="onTipe"><span>по названию</span></a></li>
-              <li><a class="downTri"><img src="img/icon-down-dir.png" alt="down triangle" width="11" height="10"></a></li>
-              <li><a class="upTri"><img src="img/icon-up-dir.png" alt="up triangle" width="11" height="10"></a></li>
+              <li><a class="downTri"></a></li>
+              <li><a class="upTri"></a></li>
             </ul>
 
-            <div class="upPinkBar">
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-            </div>
+            <div class="upPinkBar"></div>
             <div class="pink">
               <div class="pink_info">
                   <h3>Pink App</h3>
@@ -138,35 +136,20 @@
           </div>
 
           <div class="borodino-block">
-            <div class="upPinkBar">
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-            </div>
+            <div class="upPinkBar"></div>
             <img src="img/Borodinski_screenshot.jpg" alt="Borodinski screenshot" width="358" height="578">
           </div>
           <div class="handMade-block">
-            <div class="upPinkBar">
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-            </div>
+            <div class="upPinkBar"></div>
             <img src="img/HandMade_screenshot.jpg" alt="HandMade screenshot" width="359" height="578">
           </div>
 
           <div class="school-block">
-            <div class="upPinkBar">
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-            </div>
+            <div class="upPinkBar"></div>
             <img src="img/School_screenshot.jpg" alt="School screenshot" width="358" height="578">
           </div>
           <div class="kraft-block">
             <div class="upPinkBar">
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
-              <a href="blank.html"><img src="img/roundWhiteButton.png" alt=""></a>
             </div>
 
             <div class="kvas">
@@ -184,11 +167,14 @@
 
       </div> <!-- main-center -->
 
-      <div class="page-navi-block">
-        <a href="blank.html"><span>1</span></a>
-        <a href="blank.html"><span>2</span></a>
-        <a href="blank.html"><span>3</span></a>
-        <a href="blank.html"><span>Следующая</span></a>
+      <div class="page-navi-block-center">
+        <div></div>
+        <div class="page-navi-block">
+          <a href="blank.html"><span>1</span></a>
+          <a href="blank.html"><span>2</span></a>
+          <a href="blank.html"><span>3</span></a>
+          <a href="blank.html"><span>Следующая</span></a>
+        </div>
       </div>
     </main>
 
@@ -203,7 +189,7 @@
               </div>
               <a class="writeMeButt"><span>Напишите нам</span></a>
             </div>
-            <div class="whiteCommaLogo"><img src="img/whiteCommaLogo.png"></div>
+            <div class="whiteCommaLogo"><img src="img/whiteCommaLogo.png" alt="logotip"></div>
           </div>
         </section>
         <div class="iconCenter">
