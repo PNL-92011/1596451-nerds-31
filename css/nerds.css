@@ -48,6 +48,7 @@
     --togglPoint: #ABABAB;
     --prLine: #d7dcdf;
     --prLineGreen: #00CA74;
+    --radButtInner: #c1c1c1;
 
 }
 
@@ -84,7 +85,7 @@
 
   .logo_top_left {
       width: 160px;
-      height: 65px;
+      height: 66px;
       background-image: url(../img/Nerds_logo_top_left.svg);
   }
 
@@ -150,7 +151,6 @@
       opacity: 30;
   }
   
-
   .bottomHeader {
     margin-left: auto;
     margin-right: auto;
@@ -160,13 +160,77 @@
 
   .bottomHeaderCenter {
     width: 1160px;
-    margin: 0 auto 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    margin: 0 auto;
+    
+  }
+  .slider {
+    width: 1160px;
   }
 
+  .radioButBlock {
+      position: relative;
+  }
+  .radSlideBut {
+      position: absolute;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+
+  .sldBut {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    
+  }
+
+  .sldBut1 {
+    background-image: url(../img/active_slide_button.png);
+    top: 314px; 
+    left: 540px
+  }
+
+  .sldBut2 {
+    background-image: url(../img/inactive_slide_button.png);
+    top: 314px; 
+    left: 566px
+  }  
+
+  .sldBut3 {
+    top: 314px; 
+    left: 592px;
+    background-image: url(../img/inactive_slide_button.png);
+  }
+ 
+  .slide {
+    display: flex;
+  }
+
+  .slideShow {
+    width: 760px;
+    height: 431px;
+    background-repeat: no-repeat;
+  }
+
+  .show1 {
+    background-image: url(../img/PNG_Slide_show_Flying_phones.png);
+  }
+
+  .show2 {
+    background-image: url(../img/PNG_Slide_2.png);
+  }
+  
+  .show3 {background-image: url(../img/PNG_Slide_3.png);}
+
+  /* .slide1 {display: none;} */
+  .slide2 {display: none;}
+  .slide3 {display: none;}
+
+  .slideBut1:checked .slide1 {display: block;}
+
+
   .sloganBlock {
+      width: 400px;
       display: flex;
       flex-direction: column;
       padding-top: 78px;
@@ -174,6 +238,7 @@
 
   .sloganBlock p {
       margin-bottom: 38px;
+      white-space: nowrap;
   }
 
   .slogan {
@@ -182,6 +247,7 @@
     line-height: 55px;
     margin-bottom: 25px;
     margin-top: 0px;
+    white-space: nowrap;
   }
 
   .knowBut {
@@ -205,20 +271,6 @@
   .knowBut:active {background-color: var(--activeRed);}
   .knowBut span:active {opacity: 0.3;}
 
-  .slideShowBlock {
-    width: 760px;
-    height: 431px;
-    background-image: url(../img/PNG_Slide_show_Flying_phones.png);
-    background-repeat: no-repeat;
-  }
-  
-  .slideShowBlock div {
-    width: 88px;
-    height: 18px;
-    margin-top: 317px;
-    margin-left: 139px;
-  }
-
 /* Галлерея */
 .main {
     width: 1160px;
@@ -229,6 +281,7 @@
 .gallery-center {
     width: 1160px;
     height: 347px;
+    padding-top: 80px;
     margin: 0 auto;
     margin-bottom: 121px;
 }
@@ -619,7 +672,7 @@
     color: var(--textGreyMid);
 }
 
-/* страница КАТАЛОГ **********************/
+/* страница КАТАЛОГ ********************************/
 
 .site-navi .catal_breadcrumbs {
   position: relative;
@@ -937,6 +990,7 @@
     padding-top: 349px;
     box-sizing: border-box;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .sedona_info {
@@ -989,7 +1043,8 @@
   display: block;
   width: 11px;
   height: 10px;
-  background-image: url(../img/down_calm.svg) ;
+  /* background-image: url(../img/down_calm.svg) ; */
+  background-image: url(../img/down_active.svg) ;
   background-repeat: no-repeat;
 }
 .downTri:hover {background-image: url(../img/down_hover.svg);}
@@ -1015,10 +1070,11 @@
 }
 
 .onPrice span {
+    font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: var(--black);
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 
 .onPrice span:hover {opacity: 0.6;}
@@ -1093,6 +1149,7 @@
 .page-navi-block {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .page-navi-block a {
@@ -1101,7 +1158,8 @@
     background-color: var(--footerBackGround);
     border-radius: 3px;
     margin-right: 11px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    text-align: center;
 }
 
 .page-navi-block a:hover {
@@ -1117,7 +1175,8 @@
 
 .page-navi-block a:first-child {
     background-color: var(--mainBackGround);
-    border: 3px solid var(--border);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
 } 
 
 .page-navi-block a:first-child:hover {
@@ -1141,5 +1200,5 @@
 }
 
 .page-navi-block a:last-child span {
-    margin: 17px 77px 15px 78px;
+    margin: 15px 77px 15px 78px;
 }
