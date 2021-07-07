@@ -226,7 +226,7 @@
   .slide2 {display: none;}
   .slide3 {display: none;}
 
-  .slideBut1:checked .slide1 {display: block;}
+  /* .slideBut1:checked .slide1 {display: block;} */
 
 
   .sloganBlock {
@@ -1014,8 +1014,8 @@
 }
 
 .projButt {
-    width:200px;
-    height: 50px;
+    /* width:200px;
+    height: 50px; */
     margin-top: 32px;
     background-color: var(--calmRed);
     border-radius: 3px;
@@ -1069,21 +1069,20 @@
     margin-bottom: 54px;
 }
 
-.onPrice span {
+.onPrice {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: var(--black);
-    /* opacity: 0.3; */
 }
 
-.onPrice span:hover {opacity: 0.6;}
-.onTipe span:hover {opacity: 0.6;}
-.onPrice span:active {opacity: 1;}
-.onTipe span:active {opacity: 1;}
+.onPrice:hover {opacity: 0.6;}
+.onTipe:hover {opacity: 0.6;}
+.onPrice:active {opacity: 1;}
+.onTipe:active {opacity: 1;}
 
 
-.onTipe span {
+.onTipe {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1141,6 +1140,7 @@
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;;
     display: grid;
     grid-template-columns: 1fr 2fr; 
     
