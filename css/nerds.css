@@ -973,6 +973,14 @@
     margin-bottom: 48px;
 }
 
+.sortIt-criteria {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+
 .upPinkBar {
   width: 360px;
   height: 40px;
@@ -982,27 +990,54 @@
 .upPinkBar:hover {background-image: url(../img/block_hover.png);}
 
 /* SEDONA */
+.sedona-block {
+    height: 618px;
+    width: 360px;
+}
+
 .sedona {
+    position: relative;
     background-image: url(../img/Sedona_screenshot.jpg);
     background-repeat: no-repeat;
-    width: 359px;
+    width: 360px;
     height: 578px;
-    padding-top: 349px;
+    margin-top: 40px;
     box-sizing: border-box;
     margin-bottom: 32px;
     cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+
 }
 
-.sedona_info {
-    /* margin-top: 349px; */
+.sedona::before {
+    position: absolute;
+    margin-top: -40px;
+    content: "";
+    width: 360px;
+    height: 40px;
+    top: 0px;
+    background-image: url(../img/block_calm.svg);
+}
+
+.sedona_info { 
     display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 360px;
-    height: 200px;
+    height: 231px;
     background-color: var(--footerBackGround);
-    padding-top: 26px;
 }
+
+.sedona:hover .sedona_info {
+    display: flex;
+}
+
+.sedona:hover .sedona::before {
+    background-image: url(../img/block_hover.png);
+}
+
 
 .sedona_info h3 {
     font-weight: bold;
@@ -1011,11 +1046,10 @@
     text-transform: uppercase;
     color: var(--black);
     margin-bottom: 12px; 
+    margin-top: 26px;
 }
 
 .projButt {
-    /* width:200px;
-    height: 50px; */
     margin-top: 32px;
     background-color: var(--calmRed);
     border-radius: 3px;
@@ -1061,13 +1095,6 @@
 .upTri:hover {background-image: url(../img/up_hover.svg);}
 .upTri:active {background-image: url(../img/up_active.svg);}
 
-
-.pink-block ul {
-    width: 360px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 54px;
-}
 
 .onPrice {
     font-size: 14px;
