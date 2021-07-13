@@ -450,16 +450,11 @@
     border-bottom: 2px solid var(--footerBackGround);
 }
 
-.html_acad_logo {
-    display: block;
-    height: 57px; 
-    width: 199px;
-    background-image: url(../img/logo_htmlacademy.png); 
-}
+.html_acad_logo, .borod_logo, .pink_logo, .mish_logo {opacity: 0.2;}
 
-.html_acad_logo:hover {background-image: url(../img/logo_htmlacademy_hover_a.png);}
+.html_acad_logo:hover, .borod_logo:hover, .pink_logo:hover, .mish_logo:hover {opacity: 1;}
 
-.html_acad_logo:active {background-image: url(../img/logo_htmlacademy_active.png);}
+.html_acad_logo:active, .borod_logo:active, .pink_logo:active, .mish_logo:active {opacity: 0.1;}
 
 .verty_stick {
     display: block;
@@ -472,39 +467,6 @@
     margin-right: 10px;
     background-color: var(--footerBackGround);
 }
-
-.borod_logo {
-    display: block;
-    height: 90px; 
-    width: 209px;
-    background-image: url(../img/logo_borodinskiy.png); 
-}
-
-.borod_logo:hover {background-image: url(../img/logo_borodinskiy_hover.png);}
-
-.borod_logo:active {background-image: url(../img/logo_borodinskiy_active.png);}
-
-.pink_logo {
-    display: block;
-    height: 52px; 
-    width: 185px;
-    background-image: url(../img/pink_logo.png); 
-}
-
-.pink_logo:hover {background-image: url(../img/logo_pink_hover.png);}
-
-.pink_logo:active {background-image: url(../img/logo_pink_active.png);}
-
-.mish_logo {
-    display: block;
-    height: 84px; 
-    width: 173px;
-    background-image: url(../img/mishka_logo_a.png); 
-}
-
-.mish_logo:hover {background-image: url(../img/logo_mishka_hover.png);}
-
-.mish_logo:active {background-image: url(../img/logo_mishka_active.png);}
 
 /* FOOTER */
 /* big map block */
@@ -1001,7 +963,7 @@
       opacity: 0.3;
   }
 
-/* SEDONA */
+/* Projects */
 .prog_block {
     height: 618px;
     width: 360px;
@@ -1018,42 +980,15 @@
     margin-top: 26px;
 }
 
-.sedona {
-    position: relative;
-    background-image: url(../img/sedona_screenshot_a.jpg);
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 578px;
-    margin-top: 40px;
-    box-sizing: border-box;
-    cursor: pointer;
+.sedona_info, .pink_info, .borodino_info, .handMade_info, .kvas_info {
+    position: absolute; 
     display: flex;
-    align-items: flex-end;
-
-}
-
-.sedona::before {
-    position: absolute;
-    margin-top: -40px;
-    content: "";
-    width: 360px;
-    height: 40px;
-    top: 0px;
-    background-image: url(../img/block_calm.svg);
-}
-
-.sedona_info, .pink_info, .borodino_info, .handMade_info, .kvas_info { 
-    display: flex;
-    display: none;
     flex-direction: column;
     align-items: center;
     width: 360px;
     height: 231px;
     background-color: var(--footerBackGround);
-}
-
-.sedona:hover .sedona_info {
-    display: flex;
+    display: none;
 }
 
 .sedona:hover::before, .pink:hover::before, .borodino:hover::before, .handMade:hover::before, .school:hover::before, .kvas:hover::before {
@@ -1082,14 +1017,8 @@
     margin: 17px 72px 15px 72px;
 }
 
-/* PINK */
-
-.pink {
+.sedona, .pink, .borodino, .handMade, .school, .kvas {
     position: relative;
-    background-image: url(../img/pink_screenshot_a.jpg);
-    background-repeat: no-repeat;
-    width: 358px;
-    height: 578px;
     box-sizing: border-box;
     margin-top: 40px;
     cursor: pointer;
@@ -1097,7 +1026,7 @@
     align-items: flex-end;
 }
 
-.pink::before {
+.sedona::before, .pink::before, .borodino::before, .handMade::before, .school::before, .kvas::before {
     position: absolute;
     content: "";
     margin-top: -40px;
@@ -1106,112 +1035,7 @@
     top: 0px;
     background-image: url(../img/block_calm.svg);
 }
-
-.pink:hover .pink_info {
-    display: flex;
-}
-
-.borodino {
-    position: relative;
-    background-image: url(../img/borodinski_screenshot_a.jpg);
-    background-repeat: no-repeat;
-    width: 358px;
-    height: 578px;
-    box-sizing: border-box;
-    margin-top: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-}
-
-.borodino::before {
-    position: absolute;
-    content: "";
-    margin-top: -40px;
-    width: 360px;
-    height: 40px;
-    top: 0px;
-    background-image: url(../img/block_calm.svg);
-}
-
-.borodino:hover .borodino_info {
-    display: flex;
-}
-
-.handMade {
-    position: relative;
-    background-image: url(../img/handmade_screenshot_a.jpg);
-    background-repeat: no-repeat;
-    width: 358px;
-    height: 578px;
-    box-sizing: border-box;
-    margin-top: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-}
-
-.handMade::before {
-    position: absolute;
-    content: "";
-    margin-top: -40px;
-    width: 360px;
-    height: 40px;
-    top: 0px;
-    background-image: url(../img/block_calm.svg);
-}
-
-.handMade:hover .handMade_info {
-    display: flex;
-}
-
-.school {
-    position: relative;
-    background-image: url(../img/school_screenshot_a.jpg);
-    background-repeat: no-repeat;
-    width: 358px;
-    height: 578px;
-    box-sizing: border-box;
-    margin-top: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-}
-
-.school::before {
-    position: absolute;
-    content: "";
-    margin-top: -40px;
-    width: 360px;
-    height: 40px;
-    top: 0px;
-    background-image: url(../img/block_calm.svg);
-}
-
-.kvas {
-    position: relative;
-    background-image: url(../img/kraft_screenshot_a.jpg);
-    background-repeat: no-repeat;
-    width: 358px;
-    height: 578px;
-    box-sizing: border-box;
-    margin-top: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-}
-
-.kvas::before {
-    position: absolute;
-    content: "";
-    margin-top: -40px;
-    width: 360px;
-    height: 40px;
-    top: 0px;
-    background-image: url(../img/block_calm.svg);
-}
-
-.kvas:hover .kvas_info {
+.sedona:hover .sedona_info, .pink:hover .pink_info, .kvas:hover .kvas_info {
     display: flex;
 }
 
