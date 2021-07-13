@@ -89,7 +89,7 @@
   .logo_top_left {
       width: 160px;
       height: 66px;
-      background-image: url(../img/Nerds_logo_top_left.svg);
+      background-image: url(../img/nerds_logo_top_left.svg);
   }
 
   .logo_top_left:hover {
@@ -216,14 +216,14 @@
   }
 
   .show1 {
-    background-image: url(../img/PNG_Slide_show_Flying_phones.png);
+    background-image: url(../img/png_slide_show_flying_phones.png);
   }
 
   .show2 {
-    background-image: url(../img/PNG_Slide_2.png);
+    background-image: url(../img/png_slide_2.png);
   }
   
-  .show3 {background-image: url(../img/PNG_Slide_3.png);}
+  .show3 {background-image: url(../img/png_slide_3.png);}
 
   /* .slide1 {display: none;} */
   .slide2 {display: none;}
@@ -487,28 +487,18 @@
     display: block;
     height: 90px; 
     width: 209px;
-    background-image: url(../img/logo_Borodinskiy.png); 
+    background-image: url(../img/logo_borodinskiy.png); 
 }
 
-.borodLogo:hover {background-image: url(../img/logo_Borodinskiy-hover.png);}
+.borodLogo:hover {background-image: url(../img/logo_borodinskiy-hover.png);}
 
-.borodLogo:active {background-image: url(../img/logo_Borodinskiy-active.png);}
-
-/* .htmlAcadLogo::before {
-    display: inline-block;
-    content: "";  
-    width: 2px;
-    height: 52px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    background-color: var(--footerBackGround);
-} */
+.borodLogo:active {background-image: url(../img/logo_borodinskiy-active.png);}
 
 .pinkLogo {
     display: block;
     height: 52px; 
     width: 185px;
-    background-image: url(../img/Pink_logo.png); 
+    background-image: url(../img/pink_logo.png); 
 }
 
 .pinkLogo:hover {background-image: url(../img/logo_pink_hover.png);}
@@ -519,7 +509,7 @@
     display: block;
     height: 84px; 
     width: 173px;
-    background-image: url(../img/Mishka_logo.png); 
+    background-image: url(../img/mishka_logo.png); 
 }
 
 .mishLogo:hover {background-image: url(../img/logo_mishka_hover.png);}
@@ -531,14 +521,11 @@
 
 .footerBlock {
     height: 633px; 
-    
-    /* display: grid; */
-    /* grid-template-columns: 1fr 3fr; */
 }
 
 .bigMapBlock {
     height: 416px; 
-    background-image: url(../img/Big_map.jpg); 
+    background-image: url(../img/big_map.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1px;
@@ -557,8 +544,6 @@
     margin-top: 70px;
     width: 231;
     height: 190px;
-    /* background-image: url(../img/whiteCommaLogo.png);
-    background-repeat: no-repeat; */
 }
 
 .contactsBlock {
@@ -1045,7 +1030,7 @@
 
 .sedona {
     position: relative;
-    background-image: url(../img/Sedona_screenshot.jpg);
+    background-image: url(../img/sedona_screenshot.jpg);
     background-repeat: no-repeat;
     width: 360px;
     height: 578px;
@@ -1111,7 +1096,7 @@
 
 .pink {
     position: relative;
-    background-image: url(../img/Pink_screenshot.jpg);
+    background-image: url(../img/pink_screenshot.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1138,7 +1123,7 @@
 
 .borodino {
     position: relative;
-    background-image: url(../img/Borodinski_screenshot.jpg);
+    background-image: url(../img/borodinski_screenshot.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1165,7 +1150,7 @@
 
 .handMade {
     position: relative;
-    background-image: url(../img/HandMade_screenshot.jpg);
+    background-image: url(../img/handmade_screenshot.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1192,7 +1177,7 @@
 
 .school {
     position: relative;
-    background-image: url(../img/School_screenshot.jpg);
+    background-image: url(../img/school_screenshot.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1215,7 +1200,7 @@
 
 .kvas {
     position: relative;
-    background-image: url(../img/Kraft_screenshot.jpg);
+    background-image: url(../img/kraft_screenshot.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
