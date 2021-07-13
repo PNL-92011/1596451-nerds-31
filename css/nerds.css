@@ -480,12 +480,12 @@
     display: block;
     height: 90px; 
     width: 209px;
-    background-image: url(../img/logo_borodinskiy_a.png); 
+    background-image: url(../img/logo_borodinskiy.png); 
 }
 
-.borod_logo:hover {background-image: url(../img/logo_borodinskiy-hover.png);}
+.borod_logo:hover {background-image: url(../img/logo_borodinskiy_hover.png);}
 
-.borod_logo:active {background-image: url(../img/logo_borodinskiy-active.png);}
+.borod_logo:active {background-image: url(../img/logo_borodinskiy_active.png);}
 
 .pink_logo {
     display: block;
@@ -1023,7 +1023,7 @@
 
 .sedona {
     position: relative;
-    background-image: url(../img/sedona_screenshot.jpg);
+    background-image: url(../img/sedona_screenshot_a.jpg);
     background-repeat: no-repeat;
     width: 360px;
     height: 578px;
@@ -1089,7 +1089,7 @@
 
 .pink {
     position: relative;
-    background-image: url(../img/pink_screenshot.jpg);
+    background-image: url(../img/pink_screenshot_a.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1116,7 +1116,7 @@
 
 .borodino {
     position: relative;
-    background-image: url(../img/borodinski_screenshot.jpg);
+    background-image: url(../img/borodinski_screenshot_a.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1143,7 +1143,7 @@
 
 .handMade {
     position: relative;
-    background-image: url(../img/handmade_screenshot.jpg);
+    background-image: url(../img/handmade_screenshot_a.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1170,7 +1170,7 @@
 
 .school {
     position: relative;
-    background-image: url(../img/school_screenshot.jpg);
+    background-image: url(../img/school_screenshot_a.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
@@ -1193,7 +1193,7 @@
 
 .kvas {
     position: relative;
-    background-image: url(../img/kraft_screenshot.jpg);
+    background-image: url(../img/kraft_screenshot_a.jpg);
     background-repeat: no-repeat;
     width: 358px;
     height: 578px;
