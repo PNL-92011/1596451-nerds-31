@@ -988,9 +988,9 @@
     display: block;
     width: 11px;
     height: 10px;
-    /* background-image: url(../img/down_calm.svg) ; */
     background-image: url(../img/down_active.svg) ;
     background-repeat: no-repeat;
+    margin-top: 8px;
   }
   .downTri:hover {background-image: url(../img/down_hover.svg);}
   .downTri:active {background-image: url(../img/down_active.svg);}
@@ -1001,11 +1001,11 @@
     height: 10px;
     background-image: url(../img/up_calm.svg) ;
     background-repeat: no-repeat;
+    margin-top: 8px;
   }
   
   .upTri:hover {background-image: url(../img/up_hover.svg);}
   .upTri:active {background-image: url(../img/up_active.svg);}
-  
   
   .onPrice {
       font-size: 14px;
@@ -1019,21 +1019,12 @@
   .onPrice:active {opacity: 1;}
   .onTipe:active {opacity: 1;}
   
-  
   .onTipe {
       font-size: 14px;
       line-height: 18px;
       text-transform: uppercase;
       opacity: 0.3;
   }
-
-/* .upPinkBar {
-  width: 360px;
-  height: 40px;
-  background-image: url(../img/block_calm.svg);
-}
-
-.upPinkBar:hover {background-image: url(../img/block_hover.png);} */
 
 /* SEDONA */
 .progBlock {
