@@ -1319,13 +1319,14 @@
 }
 
 .modal {
+    display: none;
     position: fixed;
     /* top: 1706px; */
     top: 100px;
-    height: 590px;
     padding-top: 63px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 84px;
     background: var(--mainBackGround);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
@@ -1368,6 +1369,7 @@
 .mText {
     width: 760px;
     height: 118px;
+    margin-bottom: 47px;
 }
 
 .inp:hover {
