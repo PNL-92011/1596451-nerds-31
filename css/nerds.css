@@ -460,9 +460,9 @@
     background-image: url(../img/logo_htmlacademy.png); 
 }
 
-.html_acad_logo:hover {background-image: url(../img/logo_htmlAcademy-hover.png);}
+.html_acad_logo:hover {background-image: url(../img/logo_htmlacademy_hover_a.png);}
 
-.html_acad_logo:active {background-image: url(../img/logo_htmlacademy-active.png);}
+.html_acad_logo:active {background-image: url(../img/logo_htmlacademy_active.png);}
 
 .verty_stick {
     display: block;
@@ -541,7 +541,6 @@
 
 .contacts_block {
     width: 319px;
-    height: 308px;
     background-color: var(--mainBackGround);
     display: flex;
     flex-direction: column;
@@ -573,12 +572,13 @@
 }
 
 .write_me_butt {
-    height: 50px;
-    width: 219px;
+    /* width: 219px; */
     border-radius: 3px;
     background-color: var(--calmRed);
     color: var(--mainBackGround);
     margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 47px;
 }
 
 .write_me_butt:hover {background-color: var(--hoverRed);}
