@@ -314,13 +314,13 @@
     margin-top: 0px;
 }
 
-.But {
+.but {
     width: 160px;
     height: 50px;
     border-radius: 3px;
 }
 
-.But span {
+.but span {
     font-weight: 500;
     line-height: 18px;
     color: var(--mainBackGround);
@@ -347,7 +347,7 @@
 
 /* ПРИНЦИПЫ */
 
-.principBlock_center {
+.princip_block_center {
     width: 1160px;
     height: 413px;
     margin: 0 auto;
@@ -357,11 +357,11 @@
     margin-bottom: 73px;
 }
 
-.principBlock_center section {
+.princip_block_center section {
     height: 413px;
 }
 
-.principBlock_center_section p {
+.princip_block_center_section p {
     line-height: 24px;
     margin-bottom: 40px;
 }
