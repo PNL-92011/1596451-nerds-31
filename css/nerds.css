@@ -47,6 +47,9 @@
     --borderGrey: #888888;
     --togglPoint: #ABABAB;
     --prLine: #d7dcdf;
+    --mBorder: #D7DCDE;
+    --mBorderHover: #B4B9BB;
+    --mText: #444444;
     --prLineGreen: #00CA74;
     --radButtInner: #c1c1c1;
 
@@ -1315,3 +1318,113 @@
 .page-navi-block a:last-child span {
     margin: 15px 77px 15px 78px;
 }
+
+/* modal popup */
+.modalCenter {
+    position: relative;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal {
+    position: fixed;
+    /* top: 1706px; */
+    top: 100px;
+    height: 590px;
+    padding-top: 63px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: var(--mainBackGround);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    
+}
+
+.writeUs {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;  
+}
+
+.headBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+.youContacts {
+    width: 761px;
+    height: 353px;
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inp {
+    width: 360px;
+    height: 50px;
+    border: 2px solid var(--mBorder);
+    box-shadow: none;
+    color: var(--mText);
+    opacity: 0.5;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+.mText {
+    width: 760px;
+    height: 118px;
+}
+
+.inp:hover {
+    border-color: var(--mBorderHover);
+}
+
+.inp:focus {
+    border-color: var(--black);
+    opacity: 1;
+}
+
+.sbscr {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 9px;
+}
+
+.mSubmButton {
+    border: none;
+    padding: 0px;
+    background-color: var(--calmRed);
+    border-radius: 3px;
+}
+
+.mSubmButton:hover {background-color: var(--hoverRed);}
+.mSubmButton:active {background-color: var(--activeRed);}
+.mSubmButton:active .mSubmButtonText {opacity: 0.3;}
+
+.mSubmButtonText {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 17px 83px 15px 83px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    color: var(--mainBackGround);
+}
+
+.modal-close {
+    margin-top: 15px;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-color: inherit;
+    background-image: url(../img/cross.svg);
+}
+
+.modal-close:hover {background-image: url(../img/cross_hover.svg);}
+.modal-close:active {background-image: url(../img/cross_active.svg);}
