@@ -87,7 +87,7 @@
   .logo_top_left {
       width: 160px;
       height: 66px;
-      background-image: url(../img/nerds_logo_top_left.svg);
+      background-image: url(../img/nerds_logo_top_left_a.svg);
   }
 
   .logo_top_left:hover {
@@ -480,7 +480,7 @@
     display: block;
     height: 90px; 
     width: 209px;
-    background-image: url(../img/logo_borodinskiy.png); 
+    background-image: url(../img/logo_borodinskiy_a.png); 
 }
 
 .borod_logo:hover {background-image: url(../img/logo_borodinskiy-hover.png);}
@@ -502,7 +502,7 @@
     display: block;
     height: 84px; 
     width: 173px;
-    background-image: url(../img/mishka_logo.png); 
+    background-image: url(../img/mishka_logo_a.png); 
 }
 
 .mish_logo:hover {background-image: url(../img/logo_mishka_hover.png);}
@@ -518,7 +518,7 @@
 
 .big_map_block {
     height: 416px; 
-    background-image: url(../img/big_map.jpg); 
+    background-image: url(../img/big_map_a.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1px;
