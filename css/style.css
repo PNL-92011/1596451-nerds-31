@@ -43,7 +43,7 @@
     --m_text: #444444;
     --prLineGreen: #00CA74;
     --radButtInner: #c1c1c1;
-
+    --down_arr: #231F20;
 }
 
 .page_body {
@@ -161,47 +161,30 @@
     min-height: 431px;
   }
 
-  .radio_but_block {
+  .slides {
       position: relative;
   }
-  .rad_slide_but {
+  .radio_but_block {
       position: absolute;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
+      left: 535px;
+      top: 315px;
   }
 
   .sld_but {
-    position: absolute;
     width: 18px;
     height: 18px;
+    border: none;
+    background: none;
+    margin-right: 10px;
   }
 
-  .sld_but1 {
-    background-image: url(../img/active_slide_button.png);
-    top: 314px; 
-    left: 540px
-  }
-
-  .sld_but2 {
-    background-image: url(../img/inactive_slide_button.png);
-    top: 314px; 
-    left: 566px
-  }  
-
-  .sld_but3 {
-    top: 314px; 
-    left: 592px;
-    background-image: url(../img/inactive_slide_button.png);
-  }
- 
   .slide {
     display: flex;
   }
 
   .slide_show {
     width: 760px;
-    height: 431px;
+    min-height: 431px;
     background-repeat: no-repeat;
   }
 
@@ -434,10 +417,11 @@
 
 .portfolio_block {
     width: 1160px;
-    height: 184px;
+    min-height: 184px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 80px;
     border-top: 2px solid var(--footerBackGround);
@@ -679,7 +663,7 @@
   top: 0px;
   width: 2px;
   height: 2px;
-  border: 8px solid #ffffff;
+  border: 8px solid var(--mainBackGround);
   border-radius: 50%;
   background-color: var(--togglPoint); 
   cursor: pointer;
@@ -916,29 +900,17 @@
 }
 
 .down_tri {
-    display: block;
     width: 11px;
     height: 10px;
-    background-image: url(../img/down_active.svg) ;
-    background-repeat: no-repeat;
     margin-top: 8px;
-  }
-
-  .down_tri:hover {background-image: url(../img/down_hover.svg);}
-
-  .down_tri:active {background-image: url(../img/down_active.svg);}
-  
-  .up_tri {
-    display: block;
-    width: 11px;
-    height: 10px;
-    background-image: url(../img/up_calm.svg) ;
-    background-repeat: no-repeat;
-    margin-top: 8px;
+    background-image: url(../img/down_active.png);
   }
   
-  .up_tri:hover {background-image: url(../img/up_hover.svg);}
-  .up_tri:active {background-image: url(../img/up_active.svg);}
+.up_tri {
+  width: 11px;
+  height: 10px;
+  margin-top: 8px;
+}
   
   .on_price {
       font-size: 14px;
