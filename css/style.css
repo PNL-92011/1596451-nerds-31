@@ -894,8 +894,10 @@
 
 .sort_it_criteria {
     width: 360px;
+    min-height: 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 54px;
 }
 
@@ -903,15 +905,29 @@
     width: 11px;
     height: 10px;
     margin-top: 8px;
-    background-image: url(../img/down_active.png);
+    background-image: url(../img/down_active.svg);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: inherit;
   }
   
+.down_tri:hover {background-image: url(../img/down_hover.svg);}
+
+.down_tri:active {background-image: url(../img/down_active.svg);}
+
 .up_tri {
   width: 11px;
   height: 10px;
   margin-top: 8px;
+  background-image: url(../img/up_calm.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: inherit;
 }
   
+.up_tri:hover {background-image: url(../img/up_hover.svg);}
+
+.up_tri:active {background-image: url(../img/up_active.svg);}
   .on_price {
       font-size: 14px;
       line-height: 18px;
