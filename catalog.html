@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   </head>
   <body class="page_body">
     <header class="header">
@@ -44,8 +44,8 @@
             <div class="progress_line">
               <div class="green_progr_line"></div>
             </div>
-            <div class="toggler tog_left"></div>
-            <div class="toggler tog_right"></div>
+            <div class="toggler tog_left" aria-label="min_money_value"></div>
+            <div class="toggler tog_right" aria-label="max_money_value"></div>
           </div>
           <div class="from_till_block">
             <label class="from"><span>ОТ</span>
@@ -98,7 +98,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="show_but" type="submit"><span>показать</span></button>
+          <button class="show_but" type="submit">показать</button>
         </form>
         <div class="proj_blocks">
           <h3 class="sort_it_header">сортировать:</h3>
@@ -106,8 +106,8 @@
             <li><a class="on_price" href="#">по цене</a></li>
             <li><a class="on_tipe">по типу</a></li>
             <li><a class="on_tipe">по названию</a></li>
-            <li><a class="down_tri"></a></li>
-            <li><a class="up_tri"></a></li>
+            <li><button type="button" class="down_tri" aria-label="down_triangle"></button></li>
+            <li><button type="button" class="up_tri" aria-label="up_triangle"></button></li>
           </ul>
 
           <h2 class="to_hide">Готовые шаблоны</h2>  
@@ -118,9 +118,9 @@
 
               <div class="sedona_info info">
                 <h3>sedona</h3>
-                <p>Информационный сайт</p>
-                <p>для туристов</p>
-                <a class="proj_butt" href="#"><span>9 900 ₽</span></a>
+                <p>Информационный сайт<br>
+                  для туристов</p>
+                <a class="proj_butt" href="#">9 900 ₽</a>
               </div>
             </div>
           </div>
@@ -131,9 +131,9 @@
 
               <div class="pink_info info">
                   <h3>Pink App</h3>
-                  <p>Продуктовый лендинг</p>
-                  <p>приложения для iOS и Android</p>
-                  <a class="proj_butt" href="#"><span>9 900 ₽</span></a> 
+                  <p>Продуктовый лендинг<br>
+                  приложения для iOS и Android</p>
+                  <a class="proj_butt" href="#">9 900 ₽</a> 
               </div>
             </div>
           </div>
@@ -156,9 +156,9 @@
 
               <div class="kvas_info info">
                 <h3>Квас</h3>
-                <p>Промо-сайт производителя</p>
-                <p>крафтового кваса</p>
-                <a class="proj_butt" href="#"><span>9 900 ₽</span></a>
+                <p>Промо-сайт производителя<br>
+                  крафтового кваса</p>
+                <a class="proj_butt" href="#">9 900 ₽</a>
               </div>
             </div>
           </div>
@@ -169,10 +169,10 @@
       <div class="page_navi_block_center">
         <div></div>
         <div class="page_navi_block">
-          <a class="page_navi_block_a" href="#"><span>1</span></a>
-          <a class="page_navi_block_a" href="#"><span>2</span></a>
-          <a class="page_navi_block_a" href="#"><span>3</span></a>
-          <a class="page_navi_block_a" href="#"><span>Следующая</span></a>
+          <a class="page_navi_block_a" href="#">1</a>
+          <a class="page_navi_block_a" href="#">2</a>
+          <a class="page_navi_block_a" href="#">3</a>
+          <a class="page_navi_block_a" href="#">Следующая</a>
         </div>
       </div>
     </main>
