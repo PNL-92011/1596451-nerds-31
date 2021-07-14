@@ -152,7 +152,7 @@
     background-color: var(--footerBackGround);
   }
 
-  .bottom_header_сenter {
+  .bottom_header_center {
     width: 1160px;
     margin: 0 auto;
   }
@@ -193,10 +193,10 @@
   }
 
   .show2 {
-    background-image: url(../img/png_slide_2.png);
+    background-image: url(../img/png_slide_2_a.png);
   }
   
-  .show3 {background-image: url(../img/png_slide_3.png);}
+  .show3 {background-image: url(../img/png_slide_3_a.png);}
 
   /* .slide1 {display: none;} */
   .slide2 {display: none;}
@@ -255,7 +255,6 @@
     padding-top: 80px;
     padding-right: 60px;
     margin: 0 auto;
-    /* margin-bottom: 121px; */
     box-sizing: border-box;
 }
 
@@ -691,12 +690,6 @@
   width: 138px;
   height: 2px;
   background-color: var(--prLineGreen);
-}
-
-.priceMeter {
-    width: 205px;
-    height: 2px;
-    margin: 39px 22px 39px 33px;
 }
 
 .from_till_block {
