@@ -70,14 +70,18 @@
   }
 
   .header_center {
-      width: 1160px;
+      width: 1170px;
       margin: 0 auto;
       margin-bottom: 2.84px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
+      box-sizing: border-box;
   }
 
+  .logo_top_left {
+    padding-left: 5px;
+  }
   .logo_top_left:hover {
       opacity: 0.7;
   }
@@ -87,24 +91,29 @@
   }
 
   .site_navi {
-      margin-top: auto;
-      margin-bottom:auto;
+      min-width: 440px;
+      padding-left: 200px;
+      padding-top: 12px;
       display: flex;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       flex-wrap: wrap;
   }
 
   .site_navi li {
-      margin-right: 45px;
+      margin-right: 46px;
       padding: 0px; 
   }
 
+  .site_navi li:last-child {
+    margin-right: 0px;
+  }
   .site_navi_li a {
     color: var(--black);
     font-weight: 500;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+    
   }
 
   .site_navi_li a:hover {color: var(--calmRed);}
@@ -118,17 +127,18 @@
     color: var(--black);
     font-weight: 500;
     text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-left: 288px;
+    box-sizing: border-box;
   }
 
   .basket::before {
       position: absolute;
       content: "";
-      top: 13px;
+      top: 15px;
       width: 15px;
       height: 15px;
-      margin-left: -50px;
+      margin-left: -40px;
       background-image: url(../img/basket_svg.svg);
       background-repeat: no-repeat;
   }
@@ -161,7 +171,7 @@
   .radio_but_block {
       position: absolute;
       left: 535px;
-      top: 315px;
+      top: 308px;
   }
 
   .sld_but {
@@ -169,7 +179,7 @@
     height: 18px;
     border: none;
     background: none;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
   .slide {
@@ -200,12 +210,15 @@
       width: 400px;
       display: flex;
       flex-direction: column;
-      padding-top: 78px;
+      padding-top: 70px;
   }
 
   .slogan_block p {
       margin-bottom: 38px;
+      padding-left: 2px;
+      padding-top: 2px;
       white-space: nowrap;
+      box-sizing: border-box;
   }
 
   .slogan {
@@ -338,7 +351,7 @@
 
 .princips_header {
     margin-top: 34px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
@@ -359,8 +372,8 @@
 
 .products li {
   position: relative;
-  margin-left: 31px;
-  margin-bottom: 28px;
+  margin-left: 35px;
+  margin-bottom: 26px;
 }
 
 .products li:before {
@@ -369,7 +382,7 @@
     top: 10px; 
     width: 25px;
     height: 2px;
-    margin-left: -30px;
+    margin-left: -34px;
     background-color: var(--calmRed);
    }
 
@@ -383,20 +396,26 @@
     height: 208px; 
     width: 360px;
     margin-bottom: 37px;
+    margin-left: 22px;
 }
 .advantages h4 {
     margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 31px;
     font-weight: bold;
     line-height: 24px;
     text-transform: uppercase;
-    margin-bottom: 31px;
+    
 }
 
 .advantages ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    /* justify-content: space-around; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hiperbola_metrics li {
+  margin-left: 9px;
 }
 
 .percents {
@@ -404,6 +423,7 @@
     font-size: 45px;
     line-height: 64px;
     color: var(--black);
+    margin-bottom: 7px;
   }
 
 .perform-metrics {
@@ -417,12 +437,28 @@
     min-height: 184px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 80px;
     border-top: 2px solid var(--footerBackGround);
     border-bottom: 2px solid var(--footerBackGround);
+}
+
+.html_acad_logo_li{
+  padding-left: 30px;
+} 
+
+.borod_logo_li {
+  padding-left: 85px;
+}
+
+.pink_logo_li {
+  padding-left: 90px;
+}
+
+.mish_logo_li {
+  padding-left: 110px;
 }
 
 .html_acad_logo, .borod_logo, .pink_logo, .mish_logo {opacity: 0.2;}
@@ -442,6 +478,7 @@
     margin-right: 10px;
     background-color: var(--footerBackGround);
 }
+
 
 /* FOOTER */
 /* big map block */
@@ -570,11 +607,11 @@
 .insta_icon:hover {background-image: url(../img/instagram_icon_hover.png);}
 .insta_icon:active {background-image: url(../img/instagram_icon_active.png);}
 
-
 .promo {
     width: 660px;
-    margin-left: 139px;
+    margin-left: 105px;
     margin-right: auto;
+    padding-top: 6px;
 }
 .promo h2 {
     margin-top: 0px;
