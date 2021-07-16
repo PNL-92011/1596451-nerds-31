@@ -14,35 +14,35 @@
   }
 
 :root {
-    --mainBackGround: #FFFFFF;
-    --footerBackGround: #EEEEEE;
+    --main_back_ground: #FFFFFF;
+    --footer_back_ground: #EEEEEE;
     --gold: #EFC849;
-    --calmRed: #FB565A;
-    --hoverRed: #E74246;
-    --activeRed: #D7373B;
-    --calmGreen: #00CA74;
-    --hoverGreen:#00BC6C;
-    --activeGreen:#00AA62;
-    --calmGold:#EFC849;
-    --hoverGold:#EAB534;
-    --activeGold:#E5A722;
+    --calm_red: #FB565A;
+    --hover_red: #E74246;
+    --active_red: #D7373B;
+    --calm_green: #00CA74;
+    --hover_green:#00BC6C;
+    --active_green:#00AA62;
+    --calm_gold:#EFC849;
+    --hover_gold:#EAB534;
+    --active_gold:#E5A722;
     --black: #000000;
-    --textGrey: #283136;
-    --textGreyMid: #444444;
-    --bkgrGrey: #4D4D4D;
-    --textGreyLess: #666666;
-    --basketGrey: #A6A6A6;
+    --text_grey: #283136;
+    --text_grey_mid: #444444;
+    --bkgr_grey: #4D4D4D;
+    --text_grey_less: #666666;
+    --basket_grey: #A6A6A6;
     --border: #DBDBDB;
-    --buttBckGr: #DFDFDF;
-    --buttActive: #d5d5d5;
-    --borderGrey: #888888;
-    --togglPoint: #ABABAB;
-    --prLine: #d7dcdf;
-    --mBorder: #D7DCDE;
-    --mBorderHover: #B4B9BB;
+    --butt_back_ground: #DFDFDF;
+    --butt_active: #d5d5d5;
+    --border_grey: #888888;
+    --toggl_point: #ABABAB;
+    --pr_line: #d7dcdf;
+    --m_border: #D7DCDE;
+    --m_border_hover: #B4B9BB;
     --m_text: #444444;
-    --prLineGreen: #00CA74;
-    --radButtInner: #c1c1c1;
+    --pr_line_green: #00CA74;
+    --rad_butt_inner: #c1c1c1;
     --down_arr: #231F20;
     --info_text: #666666;
 }
@@ -54,10 +54,11 @@
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    color: var(--textGrey);
-    background-color: var(--mainBackGround);
+    color: var(--text_grey);
+    background-color: var(--main_back_ground);
     min-height: 100%;
     min-width: 1200px;
+    box-sizing: border-box;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
@@ -65,7 +66,7 @@
   
   /* ХЕДЕР */
   .header {
-      background-color: var(--footerBackGround);
+      background-color: var(--footer_back_ground);
       padding-top: 49px;
   }
 
@@ -116,7 +117,7 @@
     
   }
 
-  .site_navi_li a:hover {color: var(--calmRed);}
+  .site_navi_li a:hover {color: var(--calm_red);}
   .site_navi_li a:active {
     color: var(--black); 
     opacity: 30;
@@ -143,7 +144,7 @@
       background-repeat: no-repeat;
   }
   
-  .basket:hover {color: var(--calmRed);}
+  .basket:hover {color: var(--calm_red);}
   .basket:active {
       color: var(--black); 
       opacity: 30;
@@ -153,7 +154,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1160px;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
   }
 
   .bottom_header_сenter {
@@ -234,19 +235,19 @@
   .know_but {
     width: 240px;
     min-height: 50px;
-    background-color: var(--calmRed); 
+    background-color: var(--calm_red); 
     border-radius: 3px;
     text-transform: uppercase;
-    color: var(--mainBackGround);
+    color: var(--main_back_ground);
     line-height: 18px;
     font-weight: 500;
     padding: 17px 54px 15px;
     box-sizing: border-box;
   }
 
-  .know_but:hover {background-color: var(--hoverRed);}
+  .know_but:hover {background-color: var(--hover_red);}
   .know_but:active {
-      background-color: var(--activeRed);
+      background-color: var(--active_red);
       opacity: 0.3;
     }
 
@@ -299,24 +300,24 @@
     border-radius: 3px;
     font-weight: 500;
     line-height: 18px;
-    color: var(--mainBackGround);
+    color: var(--main_back_ground);
     text-transform: uppercase;
     padding: 17px 40px 15px 39px;
     box-sizing: border-box;
     margin-bottom: 80px;
 }
 
-.red {background-color: var(--calmRed);}
-.green {background-color: var(--calmGreen);}
-.gold {background-color: var(--calmGold);}
+.red {background-color: var(--calm_red);}
+.green {background-color: var(--calm_green);}
+.gold {background-color: var(--calm_gold);}
 
-.red:hover {background-color: var(--hoverRed);}
-.green:hover {background-color: var(--hoverGreen);}
-.gold:hover {background-color: var(--hoverGold);}
+.red:hover {background-color: var(--hover_red);}
+.green:hover {background-color: var(--hover_green);}
+.gold:hover {background-color: var(--hover_gold);}
 
-.red:active {background-color: var(--activeRed);}
-.green:active {background-color: var(--activeGreen);}
-.gold:active {background-color: var(--activeGold);}
+.red:active {background-color: var(--active_red);}
+.green:active {background-color: var(--active_green);}
+.gold:active {background-color: var(--active_gold);}
 
 .red span:active, .green span:active, .gold span:active {
     opacity: 0.3;
@@ -325,7 +326,7 @@
 .just_line {
   width: 1158px;
   height: 2px;
-  background-color: var(--footerBackGround);
+  background-color: var(--footer_back_ground);
   margin-bottom: 39px;
 }
 
@@ -384,7 +385,7 @@
     width: 25px;
     height: 2px;
     margin-left: -34px;
-    background-color: var(--calmRed);
+    background-color: var(--calm_red);
    }
 
 .advantages {
@@ -442,8 +443,8 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 80px;
-    border-top: 2px solid var(--footerBackGround);
-    border-bottom: 2px solid var(--footerBackGround);
+    border-top: 2px solid var(--footer_back_ground);
+    border-bottom: 2px solid var(--footer_back_ground);
 }
 
 .html_acad_logo_li{
@@ -477,7 +478,7 @@
     height: 52px;
     margin-bottom: 5px;
     margin-right: 10px;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
 }
 
 
@@ -490,7 +491,7 @@
 
 .big_map_block {
     height: 416px; 
-    background-image: url(../img/big_map_a.jpg); 
+    background-image: url(../img/big_map_with_white_comma_logo.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 1px;
@@ -513,7 +514,7 @@
 
 .contacts_block {
     width: 319px;
-    background-color: var(--mainBackGround);
+    background-color: var(--main_back_ground);
     display: flex;
     flex-direction: column;
     margin-top: 53px;
@@ -531,7 +532,7 @@
 
 .contacts_block div {
     line-height: 18px;
-    color: var(--textGreyLess);
+    color: var(--text_grey_less);
     width: 230px;
     height: 72px;
     margin-left: 50px;
@@ -542,7 +543,7 @@
 }
 
 .telephone {
-    color: var(--textGreyLess);
+    color: var(--text_grey_less);
     
 }
 
@@ -550,22 +551,22 @@
     width: 219px;
     min-height: 50px;
     border-radius: 3px;
-    background-color: var(--calmRed);
-    color: var(--mainBackGround);
+    background-color: var(--calm_red);
+    color: var(--main_back_ground);
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 47px;
     font-weight: 500;
     line-height: 18px;
-    color: var(--mainBackGround);
+    color: var(--main_back_ground);
     text-transform: uppercase;
     padding: 17px 44px 15px;
     box-sizing: border-box;
 }
 
-.write_me_butt:hover {background-color: var(--hoverRed);}
+.write_me_butt:hover {background-color: var(--hover_red);}
 .write_me_butt:active {
-  background-color: var(--activeRed);
+  background-color: var(--active_red);
   opacity: 0.3;
 }
 
@@ -625,7 +626,7 @@
 
 .promo p {
     line-height: 22px;
-    color: var(--textGreyMid);
+    color: var(--text_grey_mid);
 }
 
 /* страница КАТАЛОГ ********************************/
@@ -640,12 +641,12 @@
   content: "";
   width: 73px;
   height: 2px;
-  background-color: var(--calmRed);
+  background-color: var(--calm_red);
 }
 
 .catal_bot_head {
     min-height: 231px;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
     padding-top: 70px;
     box-sizing: border-box;
     display: grid; /* странное место */
@@ -688,7 +689,7 @@ form {
     height: 80px;
     width: 260px;
     border-radius: 3px;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
     margin-bottom: 14px;
 }
 
@@ -697,9 +698,9 @@ form {
   top: 0px;
   width: 2px;
   height: 2px;
-  border: 8px solid var(--mainBackGround);
+  border: 8px solid var(--main_back_ground);
   border-radius: 50%;
-  background-color: var(--togglPoint); 
+  background-color: var(--toggl_point); 
   cursor: pointer;
 }
 
@@ -716,20 +717,14 @@ form {
 .progress_line {
   width: 205px;
   height: 2px;
-  background-color: var(--prLine);
+  background-color: var(--pr_line);
   margin: 39px 22px 39px 33px;
 }
 
 .green_progr_line {
   width: 138px;
   height: 2px;
-  background-color: var(--prLineGreen);
-}
-
-.priceMeter {
-    width: 205px;
-    height: 2px;
-    margin: 39px 22px 39px 33px;
+  background-color: var(--pr_line_green);
 }
 
 .from_till_block {
@@ -742,7 +737,7 @@ form {
     width: 80px;
     min-height: 38px;
     border: none;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
     border-radius: 3px;
     padding: 10px;
     box-sizing: border-box;
@@ -760,7 +755,7 @@ form {
 .from, .till {
   line-height: 22px;
   text-transform: uppercase;
-  color: var(--textGrey);
+  color: var(--text_grey);
 }
 
 .till {
@@ -794,9 +789,9 @@ form {
     margin-bottom: 33px;
 }
 
-.featOpti, .net_opti {padding-left: 39px;}
+.feat_opti, .net_opti {padding-left: 39px;}
 
-.featOpti label {
+.feat_opti label {
     position: relative;
     display: block;
     cursor: pointer;
@@ -903,7 +898,7 @@ form {
 .show_but {
     min-height: 50px;
     width: 260;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
     border-radius: 3px;
     border: none;
     font-weight: 500;
@@ -915,13 +910,13 @@ form {
 }
 
 .show_but:hover {
-  background-color: var(--buttBckGr);
+  background-color: var(--butt_back_ground);
 }
 
 .show_but:active {
-  background-color: var(--buttActive);
+  background-color: var(--butt_active);
   opacity: 0.3;
-  box-shadow: 0px 5px var(--buttActive) inset;
+  box-shadow: 0px 5px var(--butt_active) inset;
 }
 
 
@@ -1038,7 +1033,7 @@ form {
     align-items: center;
     width: 360px;
     height: 231px;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
     display: none;
 }
 
@@ -1055,9 +1050,9 @@ form {
     width: 200px;
     min-height: 50px;
     margin-top: 32px;
-    background-color: var(--calmRed);
+    background-color: var(--calm_red);
     border-radius: 3px;
-    color: var(--mainBackGround);
+    color: var(--main_back_ground);
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
@@ -1066,10 +1061,10 @@ form {
 }
 
 .proj_butt:hover {
-  background-color: var(--hoverRed);
+  background-color: var(--hover_red);
 }
 .proj_butt:active {
-  background-color: var(--activeRed);
+  background-color: var(--active_red);
 }
 
 .sedona, .pink, .borodino, .handmade, .school, .kvas {
@@ -1115,7 +1110,7 @@ form {
 .page_navi_block a {
     width: 50px;
     min-height: 50px;
-    background-color: var(--footerBackGround);
+    background-color: var(--footer_back_ground);
     border-radius: 3px;
     margin-right: 11px;
     text-align: center;
@@ -1128,31 +1123,31 @@ form {
 }
 
 .page_navi_block a:hover {
-  background-color: var(--buttBckGr);
+  background-color: var(--butt_back_ground);
 }
 
 .page_navi_block a:active {
-  background-color: var(--buttActive);
+  background-color: var(--butt_active);
   color: var(--black);
   opacity: 0.3;
-  box-shadow: 0px 5px var(--buttActive) inset;
+  box-shadow: 0px 5px var(--butt_active) inset;
 }
 
 .page_navi_block a:first-child {
-    background-color: var(--mainBackGround);
+    background-color: var(--main_back_ground);
     border: 3px solid var(--border);
     box-sizing: border-box;
 } 
 
 .page_navi_block a:first-child:hover {
-  background-color: var(--buttBckGr);
+  background-color: var(--butt_back_ground);
 }
 
 .page_navi_block a:first-child:active {
-  background-color: var(--buttActive);
+  background-color: var(--butt_active);
   color: var(--black);
   opacity: 0.3;
-  box-shadow: 0px 5px var(--buttActive) inset;
+  box-shadow: 0px 5px var(--butt_active) inset;
 }
 
 .page_navi_block a:last-child {
@@ -1169,14 +1164,14 @@ form {
 }
 
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
-    top: 20px;
+    top: 320px;
     padding-top: 63px;
     padding-left: 100px;
     padding-right: 80px;
     padding-bottom: 84px;
-    background: var(--mainBackGround);
+    background: var(--main_back_ground);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     
@@ -1210,7 +1205,7 @@ form {
 .inp {
     width: 360px;
     height: 50px;
-    border: 2px solid var(--mBorder);
+    border: 2px solid var(--m_border);
     box-shadow: none;
     color: var(--m_text);
     opacity: 0.5;
@@ -1230,7 +1225,7 @@ form {
 }
 
 .inp:hover {
-    border-color: var(--mBorderHover);
+    border-color: var(--m_border_hover);
 }
 
 .inp:focus {
@@ -1252,19 +1247,19 @@ form {
     min-height: 50px;
     border: none;
     padding: 0px;
-    background-color: var(--calmRed);
+    background-color: var(--calm_red);
     border-radius: 3px;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     box-sizing: border-box;
-    color: var(--mainBackGround);
+    color: var(--main_back_ground);
     padding: 17px 83px 15px;
 }
 
-.m_subm_button:hover {background-color: var(--hoverRed);}
-.m_subm_button:active {background-color: var(--activeRed);}
+.m_subm_button:hover {background-color: var(--hover_red);}
+.m_subm_button:active {background-color: var(--active_red);}
 .m_subm_button:active .m_subm_button_text {opacity: 0.3;}
 
 .modal_close {
