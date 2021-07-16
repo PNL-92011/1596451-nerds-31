@@ -635,7 +635,7 @@
 
 .shop::before {
   position: absolute;
-  top: 110px;
+  top: 120px;
   content: "";
   width: 73px;
   height: 2px;
@@ -643,9 +643,9 @@
 }
 
 .catal_bot_head {
-    height: 241px;
+    min-height: 231px;
     background-color: var(--footerBackGround);
-    padding-top: 87px;
+    padding-top: 70px;
     box-sizing: border-box;
     display: grid; /* странное место */
 }
@@ -661,17 +661,13 @@
 
 .main_center {
     width: 1160px;
-    margin-left: 140px;
+    margin: 56px auto 22px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 55px;
 }
 
 /* форма */
-.main_center form {
+form {
     width: 260px;
     display: flex;
     flex-direction: column;
@@ -708,12 +704,12 @@
 
 .tog_left {
   top: 31px;
-  left: 26px;
+  left: 22px;
 }
 
 .tog_right {
   top: 31px;
-  left: 168px;
+  left: 160px;
 }
 
 .progress_line {
@@ -732,50 +728,63 @@
 .from_till_block {
   margin-bottom: 54px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .from input, .till input {
     width: 80px;
-    height: 38px;
+    min-height: 38px;
     border: none;
     background-color: var(--footerBackGround);
     border-radius: 3px;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    
 }
 
-.from span, .till span {
-    line-height: 22px;
-    text-transform: uppercase;
-    color: var(--textGrey);
-    margin-right: 11px;
+.from input {
+  margin-left: 7px;
 }
 
+.till input {
+  margin-left: 7px;
+}
+
+.from, .till {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--textGrey);
+}
+
+.till {
+  margin-left: 34px;
+}
 
 .form_heads {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    color: var(--black);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: var(--black);
 }
 
 .net {
-    border: none;
-    margin-bottom: 47px;
+  border: none;
+  margin-bottom: 27px;
 }
 
-.net_ul li, .features_field_ul li {
-    margin-bottom: 20px;
+.net_ul li {
+  margin-bottom: 16px;
+}
+
+.features_field_ul li {
+  margin-bottom: 16.5px;
 }
 
 .features_field {
     border: none;
-    margin-bottom: 50px;
+    margin-bottom: 33px;
 }
 
 .featOpti, .net_opti {padding-left: 39px;}
@@ -792,7 +801,7 @@
     position: absolute;
     width: 23px;
     height: 23px;
-    left: -36px;
+    left: -37px;
     top: 0;
     background-image: url(../img/bar.svg);
 }
@@ -802,7 +811,7 @@
   position: absolute;
   width: 23px;
   height: 23px;
-  left: -36px;
+  left: -37px;
   top: 0;
   background-image: url(../img/bar_hover.svg);
 }
@@ -812,7 +821,7 @@
     position: absolute;
     width: 25px;
     height: 23px;
-    left: -36px;
+    left: -37px;
     top: 0px;
     border: none;
     background-image: url(../img/checked_bar.svg);
@@ -843,7 +852,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: -36px;
+    left: -38px;
     top: 0;
     background-image: url(../img/circle.svg);
     background-repeat: no-repeat;
@@ -854,7 +863,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: -36px;
+    left: -38px;
     top: 0;
     background-image: url(../img/circle_hover.svg);
     background-repeat: no-repeat;
@@ -865,7 +874,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    left: -36px;
+    left: -38px;
     top: 0px;
     border: none;
     background-image: url(../img/circle_checked.svg);
@@ -910,10 +919,10 @@
 
 
 /* Проекты **************************/
-.proj_blocks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
+.proj_blocks {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sort_it_header {
@@ -921,7 +930,7 @@
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 48px;
+    margin-bottom: 35px;
     color: var(--black);
 }
 
@@ -931,7 +940,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 54px;
+    margin-bottom: 45px;
+    margin-left: 264px;
 }
 
 .down_tri {
@@ -943,7 +953,15 @@
     border: none;
     background-color: inherit;
   }
-  
+
+.on_tipe_li {
+  padding-left: 15px;
+}
+
+.down_triange_li {
+  padding-left: 35px;
+}
+
 .down_tri:hover {background-image: url(../img/down_hover.svg);}
 
 .down_tri:active {background-image: url(../img/down_active.svg);}
@@ -982,10 +1000,18 @@
   }
 
 /* Projects */
+.proj_blocks {
+  padding-left: 15px;
+}
+
 .prog_block {
-    height: 618px;
+    min-height: 618px;
     width: 360px;
     margin-bottom: 32px;
+}
+
+.prog_block:nth-child(even) {
+  margin-right: 38px;
 }
 
 .info h3 {
@@ -1076,6 +1102,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-left: 14px;
 }
 
 .page_navi_block a {
@@ -1085,7 +1112,7 @@
     border-radius: 3px;
     margin-right: 11px;
     text-align: center;
-    padding: 17px 20px 15px;
+    padding: 17px 20px 11px;
     box-sizing: border-box;
     font-weight: 500;
     line-height: 18px;
@@ -1129,17 +1156,18 @@
 .modal_center {
     position: relative;
     width: 960px;
+    min-height: 590px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .modal {
-    display: none;
+    /* display: none; */
     position: fixed;
-    top: 100px;
+    top: 20px;
     padding-top: 63px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 80px;
     padding-bottom: 84px;
     background: var(--mainBackGround);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
@@ -1161,12 +1189,14 @@
 }
 
 .your_contacts {
-    width: 761px;
-    padding-left: auto;
-    padding-right: auto;
+    width: 760px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.name_block, .email_block {
+  width: 360px;
 }
 
 .inp {
@@ -1200,6 +1230,7 @@
 }
 
 .sbscr {
+    width: 300px;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
@@ -1228,7 +1259,8 @@
 .m_subm_button:active .m_subm_button_text {opacity: 0.3;}
 
 .modal_close {
-    margin-top: 15px;
+    margin-top: 13px;
+    margin-right: -10px;
     width: 21px;
     height: 21px;
     border: none;
