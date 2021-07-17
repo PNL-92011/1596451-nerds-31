@@ -90,7 +90,7 @@
                 <label for="galler">Галерея</label>
               </li>
               <li class="feat_opti">
-                <input class="to_hide input_checkbox" type="checkbox" name="basket" id="bskt" aria-labe="basket">
+                <input class="to_hide input_checkbox" type="checkbox" name="basket" id="bskt" aria-label="basket">
                 <label for="bskt">Корзина</label>
               </li>
             </ul>
@@ -241,16 +241,16 @@
         </div>
         <form class="your_contacts" action="https://echo.htmlacademy.ru" method="POST">
           <div class="name_block">
-            <p class="subscribe">Ваше имя:</p>
-            <input class="inp" name="your_name" type="text" placeholder="Имя Фамилия" aria-label="write_your_name">
+            <label class="subscribe" for="name">Ваше имя:</label>
+            <input class="inp" name="your_name" id="name" type="text" placeholder="Имя Фамилия" aria-label="write_your_name">
           </div>
           <div class="email_block">
-            <p class="subscribe">Ваш email:</p>
-            <input class="inp" name="your_еmail" type="email" placeholder="email@example.com" aria-label="write_your_email">
+            <label class="subscribe" for="еmail_to">Ваш email:</label>
+            <input class="inp" name="your_еmail" id="еmail_to" type="email" placeholder="email@example.com" aria-label="write_your_email">
           </div>
           <div class="text_block">
-            <p class="subscribe">Текст письма:</p>
-            <p><textarea class="m_text inp" name="your_text" placeholder="В свободной форме" aria-label="write_your_letter_here"></textarea></p>
+            <label class="subscribe" for="text">Текст письма:</label>
+            <p><textarea class="m_text inp" id="text" name="your_text" placeholder="В свободной форме" aria-label="write_your_letter_here"></textarea></p>
           </div>
           <button class="m_submit_button" type="submit">отправить</button>
         </form>

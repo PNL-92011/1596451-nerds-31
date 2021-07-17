@@ -697,6 +697,7 @@
   margin-left: 105px;
   margin-right: auto;
   padding-top: 6px;
+  padding-left: 10px;
 }
 
 .promo h2 {
@@ -747,7 +748,7 @@
 
 .main_center {
   width: 1160px;
-  margin: 56px auto 22px;
+  margin: 56px auto 16px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -1237,7 +1238,7 @@ form {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -1307,10 +1308,9 @@ form {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 320px;
-  top: 10px;
   padding-top: 63px;
   padding-left: 100px;
   padding-right: 80px;

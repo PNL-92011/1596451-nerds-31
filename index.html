@@ -180,16 +180,16 @@
         </div>
         <form class="your_contacts" action="https://echo.htmlacademy.ru" method="POST">
           <div class="name_block">
-            <p class="sbscr">Ваше имя:</p>
-            <input class="inp" name="your_name" type="text" placeholder="Имя Фамилия" aria-label="write_name">
+            <label class="sbscr" for="name_from">Ваше имя:</label>
+            <input class="inp" id="name_from" name="your_name" type="text" placeholder="Имя Фамилия" aria-label="write_name">
           </div>
           <div class="email_block">
-            <p class="sbscr">Ваш email:</p>
-            <input class="inp" name="your_еmail" type="email" placeholder="email@example.com" aria-label="write_your_email">
+            <label class="sbscr" for="еmail_from">Ваш email:</label>
+            <input class="inp" id="еmail_from" name="your_еmail" type="email" placeholder="email@example.com" aria-label="write_your_email">
           </div>
           <div class="text_block">
-            <p class="sbscr">Текст письма:</p>
-            <p><textarea class="m_text inp" name="your_text" placeholder="В свободной форме" aria-label="write_your_letter_here"></textarea></p>
+            <label class="sbscr" for="text_to">Текст письма:</label>
+            <p><textarea class="m_text inp" id="text_to" name="your_text" placeholder="В свободной форме" aria-label="write_your_letter_here"></textarea></p>
           </div>
           <button class="m_submit_button" type="submit">отправить</button>
           
