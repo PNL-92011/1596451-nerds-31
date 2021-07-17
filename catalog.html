@@ -17,7 +17,7 @@
   <body class="page_body">
     <header class="header">
       <div class="header_center">
-        <a class="logo_top_left" href="index.html"><img src="img/nerds_logo_top_left_a.svg" width="165" height="66" alt="nerds_logotipe"></a>
+        <a class="logo_top_left" href="index.html"><img src="img/nerds_logo_top_left_a.svg" width="165" height="66" alt="nerds_logotipe" aria-label="nerds_logotype"></a>
         <ul class="site_navi catal_breadcrumbs">
           <li class="site_navi_li"><a href="index.html">Студия</a> </li>
           <li class="site_navi_li"><a href="#">Клиенты</a> </li>
@@ -57,15 +57,15 @@
             <legend class="form_heads">сетка:</legend>
             <ul class="check_box_grid_set net_ul">
               <li class="net_opti">
-                <input class="to_hide inp_radio" type="radio" name="grid" id="adapt" value="adaptiv" checked>
+                <input class="to_hide inp_radio" type="radio" name="grid" id="adapt" value="adaptiv" checked aria-label="adaptive">
                 <label for="adapt">Адаптивная</label>
               </li>
               <li class="net_opti">
-                <input class="to_hide inp_radio" type="radio" name="grid" id="fix" value="fix">
+                <input class="to_hide inp_radio" type="radio" name="grid" id="fix" value="fix" aria-label="fixed" >
                 <label for="fix">Фиксированная</label>
               </li>
               <li class="net_opti">
-                <input class="to_hide inp_radio" type="radio" name="grid" id="rubber" value="rubber">
+                <input class="to_hide inp_radio" type="radio" name="grid" id="rubber" value="rubber" aria-label="rubber">
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -74,35 +74,35 @@
             <legend class="form_heads">особенности:</legend>
             <ul class="check_box_feature_set features_field_ul">
               <li class="feat_opti">
-                <input class="to_hide inpchkbx" type="checkbox" name="slider" id="slder" checked>
+                <input class="to_hide input_checkbox" type="checkbox" name="slider" id="slder" checked aria-label="slider">
                 <label for="slder">Слайдер</label>
               </li>
               <li class="feat_opti">
-                <input class="to_hide inpchkbx" type="checkbox" name="advantages" id="advntgs">
+                <input class="to_hide input_checkbox" type="checkbox" name="advantages" id="advntgs" aria-label="advantages">
                 <label for="advntgs">Блок преимуществ</label>
               </li>
               <li class="feat_opti">
-                <input class="to_hide inpchkbx" type="checkbox" name="news" id="nws" checked>
+                <input class="to_hide input_checkbox" type="checkbox" name="news" id="nws" checked aria-label="news">
                 <label for="nws">Новости</label>
               </li>
               <li class="feat_opti">
-                <input class="to_hide inpchkbx" type="checkbox" name="gallery" id="glry">
-                <label for="glry">Галерея</label>
+                <input class="to_hide input_checkbox" type="checkbox" name="gallery" id="galler" aria-label="gallery">
+                <label for="galler">Галерея</label>
               </li>
               <li class="feat_opti">
-                <input class="to_hide inpchkbx" type="checkbox" name="basket" id="bskt">
+                <input class="to_hide input_checkbox" type="checkbox" name="basket" id="bskt" aria-labe="basket">
                 <label for="bskt">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <button class="show_but" type="submit">показать</button>
+          <button class="show_but" type="submit" aria-label="submit_button">показать</button>
         </form>
         <div class="proj_blocks">
           <h3 class="sort_it_header">сортировать:</h3>
           <ul class="sort_it_criteria">
-            <li><a class="on_price" href="#">по цене</a></li>
-            <li class="on_tipe_li"><a href="#" class="on_tipe">по типу</a></li>
-            <li class="on_tipe_li"><a href="#" class="on_tipe">по названию</a></li>
+            <li><a class="on_price" href="#" aria-label="on_price">по цене</a></li>
+            <li class="on_type_li"><a href="#" class="on_type" aria-label="on_type">по типу</a></li>
+            <li class="on_type_li"><a href="#" class="on_type" aria-label="on_name">по названию</a></li>
             <li class="down_triange_li"><button type="button" class="down_tri" aria-label="down_triangle"></button></li>
             <li><button type="button" class="up_tri" aria-label="up_triangle"></button></li>
           </ul>
@@ -111,84 +111,84 @@
           
           <div class="prog_block">
             <div class="sedona">
-              <a href="">
+              <a href="" aria-label="to_sedona_project">
                 <img src="img/sedona_screenshot_a.jpg" alt="sedona_screenshot" height="578" width="358">
               </a>
               <div class="sedona_info info">
                 <h3>sedona</h3>
                 <p>Информационный сайт<br>
                   для туристов</p>
-                <a class="proj_butt" href="#">9 900 ₽</a>
+                <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a>
               </div>
             </div>
           </div>
 
           <div class="prog_block">
             <div class="pink">
-              <a href="">
+              <a href="" aria-label="to_pink_project">
                 <img src="img/pink_screenshot_a.jpg" alt="pink_screenshot" height="578" width="358">
               </a>
               <div class="pink_info info">
                   <h3>Pink App</h3>
                   <p>Продуктовый лендинг<br>
                   приложения для iOS и Android</p>
-                  <a class="proj_butt" href="#">9 900 ₽</a> 
+                  <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
               </div>
             </div>
           </div>
 
           <div class="prog_block">
             <div class="borodino">
-              <a href="">
+              <a href="" aria-label="to_borodino_project">
                 <img src="img/borodinski_screenshot_a.jpg" alt="borodino_screenshot" width="358" height="578" >
               </a>
               <div class="barber_info info">
                 <h3>barbershop</h3>
                 <p>Сайт салона красоты.<br>
                 Для мужчин, да.</p>
-                <a class="proj_butt" href="#">9 900 ₽</a> 
+                <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
               </div>
             </div>
           </div>
           
           <div class="prog_block">
             <div class="handmade">
-              <a href="">
+              <a href="" aria-label="to_handmade_project">
                 <img src="img/handmade_screenshot_a.jpg" alt="handmade_screenshot" width="358" height="578" >
               </a>
               <div class="handmade_info info">
                 <h3>mishka</h3>
                 <p>Интернет-магазин<br>
                 вязаных игрушек</p>
-                <a class="proj_butt" href="#">9 900 ₽</a> 
+                <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
               </div>
             </div>
           </div>
 
           <div class="prog_block">
             <div class="school">
-              <a href="">
+              <a href="" aria-label="to_school_project">
                 <img src="img/school_screenshot_a.jpg" alt="school_screenshot" width="358" height="578" >
               </a>
               <div class="school_info info">
                 <h3>a plus</h3>
                 <p>Лендинг курсов повышения<br>
                 квалификации</p>
-                <a class="proj_butt" href="#">9 900 ₽</a> 
+                <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
               </div>
             </div>
           </div>
 
           <div class="prog_block">
             <div class="kvas">
-              <a href="">
+              <a href="" aria-label="to_kraft_kvas_project">
                 <img src="img/kraft_screenshot_a.jpg" alt="kvas_screenshot" height="578" width="358">
               </a>
               <div class="kvas_info info">
                 <h3>Кваст</h3>
                 <p>Промо-сайт производителя<br>
                   крафтового кваса</p>
-                <a class="proj_butt" href="#">9 900 ₽</a>
+                <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a>
               </div>
             </div>
           </div>
@@ -199,10 +199,11 @@
       <div class="page_navi_block_center">
         <div></div>
         <div class="page_navi_block">
-          <a class="page_navi_block_a" href="#">1</a>
-          <a class="page_navi_block_a" href="#">2</a>
-          <a class="page_navi_block_a" href="#">3</a>
-          <a class="page_navi_block_a" href="#">Следующая</a>
+          <a class="page_navi_block_a" href="#" aria-label="first_page">1</a>
+          <a class="page_navi_block_a" href="#" aria-label="second_page">2</a>
+          <a class="page_navi_block_a" href="#" aria-label="third_page">3</a>
+          <a class="page_navi_block_a" href="#" aria-label="next_page">Следующая</a>
+          
         </div>
       </div>
     </main>
@@ -214,18 +215,17 @@
               <h5>NЁRDS DESIGN STUDIO</h5>
               <div>
                 <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
-                <a class="telephone" href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="telephone" href="tel:+78005558628" aria-label="contact_telephone_number">+7 800 555-86-28</a>
               </div>
-              <a class="write_me_butt" href="">Напишите нам</a>
+              <a class="write_me_butt" href="" aria-label="write_us_button">Напишите нам</a>
             </div>
-            <div class="white_comma_logo"><img src="img/white_comma_logo.png" alt="logotip" height="190" width="231"></div>
           </div>
         </section>
         <div class="icon_center">
           <div class="icons_block">
-            <a class="vk_icon" href="#"></a>
-            <a class="fb_icon" href="#"></a>
-            <a class="insta_icon" href="#"></a>
+            <a class="vk_icon" href="#" aria-label="in_kontact_reference"></a>
+            <a class="fb_icon" href="#" aria-label="facebook_reference"></a>
+            <a class="insta_icon" href="#" aria-label="instagram_reference"></a>
           </div>
           <div class="promo">
             <h2 class="fot_header">Давайте дружить, это выгодно!</h2>
@@ -241,18 +241,18 @@
         </div>
         <form class="your_contacts" action="https://echo.htmlacademy.ru" method="POST">
           <div class="name_block">
-            <p class="sbscr">Ваше имя:</p>
-            <input class="inp" name="your_name" type="text" placeholder="Имя Фамилия">
+            <p class="subscribe">Ваше имя:</p>
+            <input class="inp" name="your_name" type="text" placeholder="Имя Фамилия" aria-label="write_your_name">
           </div>
           <div class="email_block">
-            <p class="sbscr">Ваш email:</p>
-            <input class="inp" name="your_еmail" type="email" placeholder="email@example.com">
+            <p class="subscribe">Ваш email:</p>
+            <input class="inp" name="your_еmail" type="email" placeholder="email@example.com" aria-label="write_your_email">
           </div>
           <div class="text_block">
-            <p class="sbscr">Текст письма:</p>
-            <p><textarea class="m_text inp" name="your_text" placeholder="В свободной форме"></textarea></p>
+            <p class="subscribe">Текст письма:</p>
+            <p><textarea class="m_text inp" name="your_text" placeholder="В свободной форме" aria-label="write_your_letter_here"></textarea></p>
           </div>
-          <button class="m_subm_button" type="submit">отправить</button>
+          <button class="m_submit_button" type="submit">отправить</button>
         </form>
       </section>
     </div>

@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   </head>
-
   <body class="page_body">
     <header class="header">
       <div class="header_center">
-        <a class="logo_top_left" href="index.html"><img src="img/nerds_logo_top_left_a.svg" width="165" height="66" alt="nerds_logotipe"></a>
+        <a class="logo_top_left" href="index.html" aria-label="nerds_logotype"><img src="img/nerds_logo_top_left_a.svg" width="165" height="66" alt="nerds_logotipe"></a>
         <ul class="site_navi">
           <li class="site_navi_li"><a href="index.html">Студия</a> </li>
           <li class="site_navi_li"><a href="#">Клиенты</a> </li>
@@ -35,9 +34,9 @@
             
             <div class="slides">
               <div class="radio_but_block">
-                <button class="sld_but" type="button"><img src="img/active_slide_button.png" alt="active_button"></button>
-                <button class="sld_but" type="button"><img src="img/inactive_slide_button.png" alt="inactive_button"></button>
-                <button class="sld_but" type="button"><img src="img/inactive_slide_button.png" alt="inactive_button"></button>
+                <button class="slide_button" type="button" aria-label="first_slide"><img src="img/active_slide_button.png" width="18" height="18" alt="active_button"></button>
+                <button class="slide_button" type="button" aria-label="second_slide"><img src="img/inactive_slide_button.png"  width="18" height="18" alt="inactive_button"></button>
+                <button class="slide_button" type="button" aria-label="third_slide"><img src="img/inactive_slide_button.png"  width="18" height="18" alt="inactive_button"></button>
               </div>
 
               <div class="slide slide1">
@@ -57,7 +56,7 @@
                   <p>
                     Никакого креатива, только математические формулы<br>для расчета идеальных пропорций
                   </p>
-                  <a class="know_but" href="#"><span>Узнать больше</span></a>
+                  <a class="know_but" href="#">Узнать больше</a>
                 </div>
                 <div class="slide_show show2"></div>
               </div>
@@ -137,13 +136,13 @@
       <section>
         <h2 class="to_hide">Portfolio</h2>
         <ul class="portfolio_block">
-          <li class="html_acad_logo_li"><a class="html_acad_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.png" alt="html_logo" width="199" height="57"></a></li>
+          <li class="html_acad_logo_li"><a class="html_acad_logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy_intensive"><img src="img/logo_htmlacademy.png" alt="html_logo" width="199" height="57"></a></li>
           <li class="verty_stick"></li>
-          <li class="borod_logo_li"><a class="borod_logo" href="#"><img src="img/logo_borodinskiy.png" alt="borodinskiy_logo" width="209" height="90"></a></li>
+          <li class="borod_logo_li"><a class="borod_logo" href="#" aria-label="borodinskiy_barbershop"><img src="img/logo_borodinskiy.png" alt="borodinskiy_logo" width="209" height="90"></a></li>
           <li class="verty_stick"></li>
-          <li class="pink_logo_li"><a class="pink_logo" href="#"><img src="img/logo_pink.png" alt="pink_logo" width="185" height="52"></a></li>
+          <li class="pink_logo_li"><a class="pink_logo" href="#" aria-label="pink_network"><img src="img/logo_pink.png" alt="pink_logo" width="185" height="52"></a></li>
           <li class="verty_stick"></li>
-          <li class="mish_logo_li"><a class="mish_logo" href="#"><img src="img/logo_mishka.png" alt="mishka_logo" width="173" height="84"></a></li>
+          <li class="mish_logo_li"><a class="mish_logo" href="#" aria-label="toys_online_shop"><img src="img/logo_mishka.png" alt="mishka_logo" width="173" height="84"></a></li>
         </ul>
       </section>
       
@@ -157,16 +156,15 @@
               <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
               <a class="telephone" href="tel:+78005558628">+7 800 555-86-28</a>
             </div>
-            <a class="write_me_butt" href="">Напишите нам</a>
+            <a class="write_me_butt" href="" aria-label="write_us_button">Напишите нам</a>
           </div>
-          <!-- <div class="white_comma_logo"><img src="img/white_comma_logo.png" alt="logotip" height="190" width="231"></div> -->
         </div>
       </section>
       <div class="icon_center">
         <div class="icons_block">
-          <a class="vk_icon" href="#"></a>
-          <a class="fb_icon" href="#"></a>
-          <a class="insta_icon" href="#"></a>
+          <a class="vk_icon" href="#" aria-label="in_kontact_reference"></a>
+          <a class="fb_icon" href="#" aria-label="facebook_reference"></a>
+          <a class="insta_icon" href="#" aria-label="instagram_reference"></a>
         </div>
         <div class="promo">
           <h2 class="fot_header">Давайте дружить, это выгодно!</h2>
@@ -183,17 +181,17 @@
         <form class="your_contacts" action="https://echo.htmlacademy.ru" method="POST">
           <div class="name_block">
             <p class="sbscr">Ваше имя:</p>
-            <input class="inp" name="your_name" type="text" placeholder="Имя Фамилия">
+            <input class="inp" name="your_name" type="text" placeholder="Имя Фамилия" aria-label="write_name">
           </div>
           <div class="email_block">
             <p class="sbscr">Ваш email:</p>
-            <input class="inp" name="your_еmail" type="email" placeholder="email@example.com">
+            <input class="inp" name="your_еmail" type="email" placeholder="email@example.com" aria-label="write_your_email">
           </div>
           <div class="text_block">
             <p class="sbscr">Текст письма:</p>
-            <p><textarea class="m_text inp" name="your_text" placeholder="В свободной форме"></textarea></p>
+            <p><textarea class="m_text inp" name="your_text" placeholder="В свободной форме" aria-label="write_your_letter_here"></textarea></p>
           </div>
-          <button class="m_subm_button" type="submit">отправить</button>
+          <button class="m_submit_button" type="submit">отправить</button>
           
         </form>
         
