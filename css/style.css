@@ -206,14 +206,17 @@
 }
 
 .show2 {
-  background-image: url(../img/png_slide_2.png);
+  background-image: url(../img/png_slide_2_a.png);
 }
 
 .show3 {
-  background-image: url(../img/png_slide_3.png);
+  background-image: url(../img/png_slide_3_a.png);
 }
 
-/* .slide1 {display: none;} */
+/* .slide1 {
+  display: none;
+} */
+
 .slide2 {
   display: none;
 }
