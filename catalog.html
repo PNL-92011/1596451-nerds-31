@@ -24,10 +24,10 @@
           <li class="shop site_navi_li"><a href="catalog.html">Магазин</a> </li>
           <li class="site_navi_li"><a href="#">Контакты</a> </li>
         </ul>
-        <a class="basket" href="#">Корзина</a>
+        <a class="basket catal_basket" href="#">Корзина</a>
       </div>
       <div class="catal_bot_head">
-        <h1 class="chzh">Магазин готовых шаблонов</h1>
+        <h1 class="ready_template_shop">Магазин готовых шаблонов</h1>
       </div>
 
     </header>
@@ -49,29 +49,28 @@
               <input class="price" type="text" name="from" placeholder="0">
             </label>
             <label class="till">до
-              <input class="price" type="text" name="till" value="15 000">
+              <input class="price" type="text" name="till" value="150 000">
             </label>
           </div>
-
           <fieldset class="net">
             <legend class="form_heads">сетка:</legend>
             <ul class="check_box_grid_set net_ul">
-              <li class="net_opti">
+              <li class="net_opti adapted">
                 <input class="to_hide inp_radio" type="radio" name="grid" id="adapt" value="adaptiv" checked aria-label="adaptive">
                 <label for="adapt">Адаптивная</label>
               </li>
-              <li class="net_opti">
+              <li class="net_opti fixed">
                 <input class="to_hide inp_radio" type="radio" name="grid" id="fix" value="fix" aria-label="fixed" >
                 <label for="fix">Фиксированная</label>
               </li>
-              <li class="net_opti">
+              <li class="net_opti rubber">
                 <input class="to_hide inp_radio" type="radio" name="grid" id="rubber" value="rubber" aria-label="rubber">
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="features_field">
-            <legend class="form_heads">особенности:</legend>
+            <legend class="form_heads_features">особенности:</legend>
             <ul class="check_box_feature_set features_field_ul">
               <li class="feat_opti">
                 <input class="to_hide input_checkbox" type="checkbox" name="slider" id="slder" checked aria-label="slider">
@@ -104,18 +103,16 @@
             <li class="on_type_li"><a href="#" class="on_type" aria-label="on_type">по типу</a></li>
             <li class="on_type_li"><a href="#" class="on_type" aria-label="on_name">по названию</a></li>
             <li class="down_triange_li"><button type="button" class="down_tri" aria-label="down_triangle"></button></li>
-            <li><button type="button" class="up_tri" aria-label="up_triangle"></button></li>
+            <li class="up_triangle_li"></li><button type="button" class="up_tri" aria-label="up_triangle"></button></li>
           </ul>
 
           <h2 class="to_hide">Готовые шаблоны</h2>  
           
           <div class="prog_block">
             <div class="sedona">
-              <a href="" aria-label="to_sedona_project">
-                <img src="img/sedona_screenshot_a.jpg" alt="sedona_screenshot" height="578" width="358">
-              </a>
+              <img src="img/sedona_screenshot_a.jpg" alt="sedona_screenshot" height="578" width="358">
               <div class="sedona_info info">
-                <h3>sedona</h3>
+                <a href="#" aria-label="sedona_project"><h3>sedona</h3></a>
                 <p>Информационный сайт<br>
                   для туристов</p>
                 <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a>
@@ -125,11 +122,9 @@
 
           <div class="prog_block">
             <div class="pink">
-              <a href="" aria-label="to_pink_project">
-                <img src="img/pink_screenshot_a.jpg" alt="pink_screenshot" height="578" width="358">
-              </a>
+              <img src="img/pink_screenshot_a.jpg" alt="pink_screenshot" height="578" width="358">
               <div class="pink_info info">
-                  <h3>Pink App</h3>
+                <a href="#" aria-label="to_pink_project"><h3>pink App</h3></a>
                   <p>Продуктовый лендинг<br>
                   приложения для iOS и Android</p>
                   <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
@@ -139,11 +134,9 @@
 
           <div class="prog_block">
             <div class="borodino">
-              <a href="" aria-label="to_borodino_project">
-                <img src="img/borodinski_screenshot_a.jpg" alt="borodino_screenshot" width="358" height="578" >
-              </a>
+              <img src="img/borodinski_screenshot_a.jpg" alt="borodino_screenshot" width="358" height="578" >
               <div class="barber_info info">
-                <h3>barbershop</h3>
+                <a href="#" aria-label="to_borodino_project"></a><h3>barbershop</h3></a>
                 <p>Сайт салона красоты.<br>
                 Для мужчин, да.</p>
                 <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
@@ -153,12 +146,10 @@
           
           <div class="prog_block">
             <div class="handmade">
-              <a href="" aria-label="to_handmade_project">
-                <img src="img/handmade_screenshot_a.jpg" alt="handmade_screenshot" width="358" height="578" >
-              </a>
+              <img src="img/handmade_screenshot_a.jpg" alt="handmade_screenshot" width="358" height="578" >
               <div class="handmade_info info">
-                <h3>mishka</h3>
-                <p>Интернет-магазин<br>
+                <a href="#" aria-label="to_handmade_project"><h3>mishka</h3></a>
+                <p class="mishka_text">Интернет-магазин<br>
                 вязаных игрушек</p>
                 <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
               </div>
@@ -167,11 +158,9 @@
 
           <div class="prog_block">
             <div class="school">
-              <a href="" aria-label="to_school_project">
-                <img src="img/school_screenshot_a.jpg" alt="school_screenshot" width="358" height="578" >
-              </a>
+              <img src="img/school_screenshot_a.jpg" alt="school_screenshot" width="358" height="578" >
               <div class="school_info info">
-                <h3>a plus</h3>
+                <a href="#" aria-label="to_school_project"><h3>a plus</h3></a>
                 <p>Лендинг курсов повышения<br>
                 квалификации</p>
                 <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a> 
@@ -181,12 +170,10 @@
 
           <div class="prog_block">
             <div class="kvas">
-              <a href="" aria-label="to_kraft_kvas_project">
-                <img src="img/kraft_screenshot_a.jpg" alt="kvas_screenshot" height="578" width="358">
-              </a>
+              <img src="img/kraft_screenshot_a.jpg" alt="kvas_screenshot" height="578" width="358">
               <div class="kvas_info info">
-                <h3>Кваст</h3>
-                <p>Промо-сайт производителя<br>
+                <a href="#" aria-label="to_kraft_kvas_project"><h3 class="kvast_reference">кваст</h3></a>
+                <p class="kvast_text">Промо-сайт производителя<br>
                   крафтового кваса</p>
                 <a class="proj_butt" href="#" aria-label="buy_button">9 900 ₽</a>
               </div>
@@ -199,7 +186,7 @@
       <div class="page_navi_block_center">
         <div></div>
         <div class="page_navi_block">
-          <a class="page_navi_block_a" href="#" aria-label="first_page">1</a>
+          <a class="page_navi_block_a first_page" href="#" aria-label="first_page">1</a>
           <a class="page_navi_block_a" href="#" aria-label="second_page">2</a>
           <a class="page_navi_block_a" href="#" aria-label="third_page">3</a>
           <a class="page_navi_block_a" href="#" aria-label="next_page">Следующая</a>
