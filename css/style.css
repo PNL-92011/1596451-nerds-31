@@ -67,13 +67,12 @@
 /* ХЕДЕР */
 .header {
   background-color: var(--footer_back_ground);
-  padding-top: 49px;
+  padding-top: 47px;
 }
 
 .header_center {
   width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 2.84px;
+  margin: 0 auto 0.5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -82,6 +81,7 @@
 
 .logo_top_left {
   padding-left: 5px;
+  line-height: 0px;
 }
 
 .logo_top_left:hover {
@@ -94,8 +94,8 @@
 
 .site_navi {
   min-width: 440px;
-  margin-left: 200px;
-  padding-top: 12px;
+  margin-left: 197px;
+  padding-top: 14px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -131,15 +131,15 @@
   color: var(--black);
   font-weight: 500;
   text-transform: uppercase;
-  padding-top: 12px;
-  padding-left: 288px;
+  padding-top: 16px;
+  padding-left: 283px;
   box-sizing: border-box;
 }
 
 .basket::before {
   position: absolute;
   content: "";
-  top: 15px;
+  top: 20px;
   width: 15px;
   height: 15px;
   margin-left: -40px;
@@ -159,8 +159,8 @@
 .bottom_header {
   margin-left: auto;
   margin-right: auto;
-  width: 1160px;
   background-color: var(--footer_back_ground);
+  outline: 1px solid yellowgreen;
 }
 
 .bottom_header_сenter {
@@ -179,8 +179,8 @@
 
 .radio_but_block {
   position: absolute;
-  left: 535px;
-  top: 308px;
+  left: 530px;
+  top: 315px;
 }
 
 .slide_button {
@@ -233,9 +233,9 @@
 }
 
 .slogan_block p {
-  margin-bottom: 38px;
-  padding-left: 2px;
-  padding-top: 2px;
+  margin-bottom: 39px;
+  padding-top: 4px;
+  line-height: 24px;
   box-sizing: border-box;
 }
 
@@ -245,7 +245,7 @@
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 25px;
-  margin-top: 0px;
+  margin-top: 6px;
   white-space: nowrap;
 }
 
@@ -315,7 +315,7 @@
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   margin-top: 0px;
   color: var(--black);
 }
@@ -391,7 +391,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 42px;
-  margin-bottom: 73px;
+  margin-bottom: 50px;
 }
 
 .princip_block_center section {
@@ -400,12 +400,12 @@
 
 .princip_block_center_section p {
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .princips_header {
   margin-top: 34px;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -426,7 +426,7 @@
 .products li {
   position: relative;
   margin-left: 35px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .products li:before {
@@ -454,7 +454,7 @@
 
 .advantages h4 {
   margin-top: 0px;
-  margin-left: 30px;
+  margin-left: 23px;
   margin-bottom: 31px;
   font-weight: bold;
   line-height: 24px;
@@ -462,13 +462,25 @@
 }
 
 .advantages ul {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: flex-start;
 }
 
 .hiperbola_metrics li {
-  margin-left: 9px;
+  width: 115px;
+}
+
+.hiperbola_metrics li:nth-child(1) {
+  padding-left: 21px;
+}
+
+.hiperbola_metrics li:nth-child(2) {
+  padding-left: 5px;
+}
+
+.hiperbola_metrics li:nth-child(3) {
+  padding-left: 4px;
 }
 
 .percents {
@@ -476,10 +488,15 @@
   font-size: 45px;
   line-height: 64px;
   color: var(--black);
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 
-.perform-metrics {
+.percents sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.perform_metrics {
   line-height: 18px;
 }
 
@@ -487,7 +504,7 @@
 
 .portfolio_block {
   width: 1160px;
-  min-height: 184px;
+  min-height: 180px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -496,6 +513,8 @@
   margin-bottom: 80px;
   border-top: 2px solid var(--footer_back_ground);
   border-bottom: 2px solid var(--footer_back_ground);
+  padding-top: 10px;
+  box-sizing: border-box;
 }
 
 .html_acad_logo_li {
@@ -557,6 +576,7 @@
 .big_map_block {
   height: 416px;
   background-image: url(../img/big_map_with_white_comma_logo.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 1px;
@@ -589,7 +609,7 @@
   font-size: 18px;
   line-height: 30px;
   color: var(--black);
-  margin-top: 49px;
+  margin-top: 50px;
   margin-left: 50px;
   margin-bottom: 22.7px;
 }
@@ -697,7 +717,7 @@
 
 .promo {
   width: 660px;
-  margin-left: 105px;
+  margin-left: 100px;
   margin-right: auto;
   padding-top: 6px;
   padding-left: 10px;
