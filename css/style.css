@@ -4,7 +4,6 @@
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -45,6 +44,10 @@
   --rad_butt_inner: #c1c1c1;
   --down_arr: #231f20;
   --info_text: #666666;
+}
+
+.page_catalog {
+  height: 2210px;
 }
 
 .page_body {
@@ -283,7 +286,6 @@
   padding-top: 80px;
   padding-right: 60px;
   margin: 0 auto;
-  /* margin-bottom: 121px; */
   box-sizing: border-box;
 }
 
@@ -953,9 +955,9 @@ form {
   background-image: url(../img/bar.svg);
 }
 
-.input_checkbox:focus + label::before {
+/* .input_checkbox:focus + label::before {
   outline: 4px solid var(--black);
-}
+} */
 
 .input_checkbox:hover + label::before {
   content: "";
@@ -1020,9 +1022,9 @@ form {
   background-repeat: no-repeat;
 }
 
-.inp_radio:focus + label::before {
+/* .inp_radio:focus + label::before {
   outline: 2px solid black;
-}
+} */
 
 .inp_radio:checked + label::before {
   content: "";
@@ -1391,7 +1393,7 @@ a.first_page {
 .modal_center {
   position: relative;
   width: 960px;
-  height: 590px;
+  height: 1px;
   margin-left: auto;
   margin-right: auto;
 }
