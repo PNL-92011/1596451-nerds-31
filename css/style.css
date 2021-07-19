@@ -574,6 +574,9 @@
 
 .big_map_block {
   height: 416px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/big_map_with_white_comma_logo.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1200,6 +1203,15 @@ form {
   margin-top: 28px;
 }
 
+.info h3:hover {
+  color: var(--calm_red);
+}
+
+.info h3:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
 .sedona_info,
 .pink_info,
 .barber_info,
@@ -1214,7 +1226,7 @@ form {
   min-height: 231px;
   background-color: var(--footer_back_ground);
   box-sizing: border-box;
-  /* display: none; */
+  display: none;
 }
 
 .sedona_info p,
@@ -1312,7 +1324,7 @@ form {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -1326,8 +1338,6 @@ form {
 
 .page_navi_block a {
   width: 50px;
-  /* min-height: 48px; */
-  
   background-color: var(--footer_back_ground);
   border-radius: 3px;
   margin-right: 11px;
@@ -1343,7 +1353,6 @@ form {
 
 a.first_page {
   padding: 15px;
-  /* height: 20px; */
 }
 
 .page_navi_block a:hover {
